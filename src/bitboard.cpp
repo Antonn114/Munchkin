@@ -65,7 +65,6 @@ void init_attack_rays_negative(){
 
 }
 
-
 void init_attack_rays(){
   init_attack_rays_positive();
   init_attack_rays_negative();
@@ -83,7 +82,8 @@ void init_attack_pieces(){
     rook_attacks[sq] = rank_attacks[sq] | file_attacks[sq];
     bishop_attacks[sq] = diag_attacks[sq] | antidiag_attacks[sq];
     queen_attacks[sq] = rook_attacks[sq] | bishop_attacks[sq];
-  } 
+  }
+  init_knight_attacks();
 }
 
 void init_attack_masks(){
@@ -94,8 +94,8 @@ void init_attack_masks(){
 
 // Attacks for real
 
-U64 bishop_attacks_legal[64] [512];
-U64 rook_attacks_legal[64][4096];
+U64** bishop_attacks_legal;
+U64** rook_attacks_legal;
 
 struct SMagic {
   U64 mask;  // to mask relevant squares of both lines (no outer squares)
@@ -105,23 +105,53 @@ struct SMagic {
 SMagic bishop_magic[64];
 SMagic rook_magic[64];
 
-U64 get_rook_attacks(U64 occ, enumSquare sq){
+U64 get_rook_attacks_raw(U64 occ, enumSquare sq){
   occ &= rook_magic[sq].mask;
   occ *= rook_magic[sq].magic;
   occ >>= 64 - RBits[sq];
   return rook_attacks_legal[sq][occ];
 }
 
-U64 get_bishop_attacks(U64 occ, enumSquare sq){
+U64 get_bishop_attacks_raw(U64 occ, enumSquare sq){
   occ &= bishop_magic[sq].mask;
   occ *= bishop_magic[sq].magic;
   occ >>= 64 - BBits[sq];
   return bishop_attacks_legal[sq][occ];
 }
 
+U64 get_queen_attacks_raw(U64 occ, enumSquare sq){
+  return get_rook_attacks_raw(occ, sq) | get_bishop_attacks_raw(occ, sq);
+}
+
+U64 bishop_good_masks_get(U64 blocker_mask, int sq){
+  U64 good_mask = 0;
+  int isq;
+  int cnt;
+
+  for (isq = sq + 7, cnt = 0; cnt < std::min(sq & 7, 7 - (sq >> 3)); cnt++, isq += 7){
+    good_mask |= (1ULL << isq);
+    if ((blocker_mask >> isq)&1) break;
+  }
+  for (isq = sq + 9, cnt = 0; cnt < std::min(7 - (sq & 7), 7 - (sq >> 3)); cnt++, isq += 9){
+    good_mask |= (1ULL << isq);
+    if ((blocker_mask >> isq)&1) break;
+  }
+  for (isq = sq - 7, cnt = 0; cnt < std::min(7 - (sq & 7), (sq >> 3)); cnt++, isq -= 7){
+    good_mask |= (1ULL << isq);
+    if ((blocker_mask >> isq)&1) break;
+  }
+  for (isq = sq - 9, cnt = 0; cnt < std::min((sq & 7), (sq >> 3)); cnt++, isq -= 9){
+    good_mask |= (1ULL << isq);
+    if ((blocker_mask >> isq)&1) break;
+  }
+  return good_mask;
+}
+
 void init_bishop_legal_moves(){
+  bishop_attacks_legal = (U64**)malloc(64*sizeof(U64*));
   for (int sq = 0; sq < 64; sq++){
-    for (int i = 0; i < 512; i++){
+    bishop_attacks_legal[sq] = (U64*)malloc(sizeof(U64)*(1 << popCount(bishop_magic[sq].mask)));
+    for (int i = 0; i < (1 << popCount(bishop_magic[sq].mask)); i++){
       U64 temp = 0;
       int ptr = 0;
       for (int j = 0; j < 64; j++){
@@ -130,29 +160,54 @@ void init_bishop_legal_moves(){
           ptr++;
         }
       }
-      U64 good_mask = 0;
-      int isq;
-      int cnt;
-
-      for (isq = sq + 7, cnt = 0; cnt < std::min(sq & 7, 7 - (sq >> 3)); cnt++, isq += 7){
-        good_mask |= (1ULL << isq);
-        if ((temp >> isq)&1) break;
-      }
-      for (isq = sq + 9, cnt = 0; cnt < std::min(7 - (sq & 7), 7 - (sq >> 3)); cnt++, isq += 9){
-        good_mask |= (1ULL << isq);
-        if ((temp >> isq)&1) break;
-      }
-      for (isq = sq - 7, cnt = 0; cnt < std::min(7 - (sq & 7), (sq >> 3)); cnt++, isq -= 7){
-        good_mask |= (1ULL << isq);
-        if ((temp >> isq)&1) break;
-      }
-      for (isq = sq - 9, cnt = 0; cnt < std::min((sq & 7), (sq >> 3)); cnt++, isq -= 9){
-        good_mask |= (1ULL << isq);
-        if ((temp >> isq)&1) break;
-      }
+      U64 good_mask = bishop_good_masks_get(temp, sq); 
       temp *= bishop_magic[sq].magic;
       temp >>= 64 - BBits[sq];
       bishop_attacks_legal[sq][temp] = good_mask;
+    }
+  }
+}
+
+U64 rook_good_masks_get(U64 blocker_mask, int sq){
+  U64 good_mask = 0;
+  int isq;
+
+  for (isq = sq + 8; isq < 64; isq += 8){
+    good_mask |= (1ULL << isq);
+    if ((blocker_mask >> isq)&1) break;
+  }
+  for (isq = sq + 1; (isq >> 3) == (sq >> 3); isq += 1){
+    good_mask |= (1ULL << isq);
+    if ((blocker_mask >> isq)&1) break;
+  }
+  for (isq = sq - 8; isq >= 0; isq -= 8){
+    good_mask |= (1ULL << isq);
+    if ((blocker_mask >> isq)&1) break;
+  }
+  for (isq = sq - 1; (isq >> 3) == (sq >> 3); isq -= 1){
+    good_mask |= (1ULL << isq);
+    if ((blocker_mask >> isq)&1) break;
+  }
+  return good_mask;
+}
+
+void init_rook_legal_moves(){
+  rook_attacks_legal = (U64**)malloc(64*sizeof(U64*));
+  for (int sq = 0; sq < 64; sq++){
+    rook_attacks_legal[sq] = (U64*)malloc(sizeof(U64)*(1 << popCount(rook_magic[sq].mask)));
+    for (int i = 0; i < (1 << popCount(rook_magic[sq].mask)); i++){
+      U64 temp = 0;
+      int ptr = 0;
+      for (int j = 0; j < 64; j++){
+        if ((rook_magic[sq].mask >> j) & 1){
+          temp |= ((i >> ptr) & 1) * (1ULL << j);
+          ptr++;
+        }
+      }
+      U64 good_mask = rook_good_masks_get(temp, sq);
+      temp *= rook_magic[sq].magic;
+      temp >>= 64 - RBits[sq];
+      rook_attacks_legal[sq][temp] = good_mask;
     }
   }
 }
@@ -165,10 +220,21 @@ void init_magic(){
     rook_magic[i].mask = rook_attacks[i] & (UNIVERSE ^ (A_FILE*((i & 7) != 0) | H_FILE*((i & 7) != 7) | F_RANK*((i >> 3) != 0) | E_RANK*((i >> 3) != 8)));
   }
   init_bishop_legal_moves();
-  printf("gimme a random position: (occ, sq)");
-  U64 inp1;
-  int inp2;
-  scanf("%llu %d", &inp1, &inp2);
-  printf("%d\n", enumSquare(inp2));
-  printf("ok here u go: %llu\n", get_bishop_attacks(inp1, enumSquare(inp2)));
+  init_rook_legal_moves();
+}
+
+U64 knight_attacks[64], king_attacks[64];
+
+void init_other_attacks(){
+  for (int i = 0; i < 64; i++){
+    U64 temp = (1ULL << i);
+    knight_attacks[i] = noNoEa(temp) | noEaEa(temp) | soEaEa(temp)
+                      | soSoEa(temp) | noNoWe(temp) | noWeWe(temp)
+                      | soWeWe(temp) | soSoWe(temp);
+    king_attacks[i] = noEaOne(temp) | nortOne(temp) | noWeOne(temp)
+                      | westOne(temp) | soWeOne(temp) | soutOne(temp)
+                      | soEaOne(temp) | eastOne(temp);
+    pawn_white_attacks[i] = noEaOne(temp) | noWeOne(temp);
+    pawn_black_attacks[i] = soEaOne(temp) | soWeOne(temp);
+  }
 }

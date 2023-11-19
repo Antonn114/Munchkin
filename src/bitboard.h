@@ -31,37 +31,22 @@ const U64 UNIVERSE = 0xFFFFFFFFFFFFFFFF;
 
 extern U64 nort_attacks[64], sout_attacks[64], east_attacks[64], west_attacks[64];
 extern U64 nowe_attacks[64], noea_attacks[64], sowe_attacks[64], soea_attacks[64];
-
 extern U64 rank_attacks[64], file_attacks[64], diag_attacks[64], antidiag_attacks[64];
-
 extern U64 rook_attacks[64], bishop_attacks[64], queen_attacks[64];
 
 void init_attack_masks();
 
 // MAGIC BITBOARD 
 
-U64 get_rook_attacks(U64 occ, enumSquare sq);
-U64 get_bishop_attacks(U64 occ, enumSquare sq);
-
+U64 get_rook_attacks_raw(U64 occ, enumSquare sq);
+U64 get_bishop_attacks_raw(U64 occ, enumSquare sq);
+U64 get_queen_attacks_raw(U64 occ, enumSquare sq);
 void init_magic();
 
-// BOARD
+// OTHER PIECES ATTACK PATTERNS
 
-class Board{
-private:
-  U64 pieceBB[8];
-public:
-  enum enumPiece{
-    nWhite,
-    nBlack,
-    nPawn,
-    nKnight,
-    nBishop,
-    nRook,
-    nQueen,
-    nKing
-  };
-};
+extern U64 knight_attacks[64], king_attacks[64], pawn_black_attacks[64], pawn_white_attacks[64];
+void init_other_attacks();
 
 // Garbo
 

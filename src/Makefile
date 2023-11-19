@@ -16,4 +16,4 @@ $(TARGET): $(OBJECTS)
 	g++ -c -o $@ $<
 
 clean:
-	rm -rf $(OBJECTS)
+	rm -rf $(OBJECTS) $(TARGET)
