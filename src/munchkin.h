@@ -3,7 +3,6 @@
 
 #include "defs.h"
 #include "bitboard.h"
-#include "piece.h"
 #include "position.h"
 
 void munchkin_init();

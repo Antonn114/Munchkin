@@ -4,7 +4,6 @@
 // mapping: LERF
 
 #include "defs.h"
-#include "piece.h"
 
 enum enumSquare {
   a1, b1, c1, d1, e1, f1, g1, h1,
@@ -45,7 +44,7 @@ void init_magic();
 
 // OTHER PIECES ATTACK PATTERNS
 
-extern U64 knight_attacks[64], king_attacks[64], pawn_black_attacks[64], pawn_white_attacks[64];
+extern U64 knight_attacks[64], king_attacks[64], pawn_attacks[2][64];
 void init_other_attacks();
 
 // Garbo

@@ -2,7 +2,6 @@
 #include "bittricks.h"
 #include <stdio.h>
 #include <algorithm>
-#include <set>
 //Attacks on empty board
 
 U64 nort_attacks[64], sout_attacks[64], east_attacks[64], west_attacks[64];
@@ -83,7 +82,7 @@ void init_attack_pieces(){
     bishop_attacks[sq] = diag_attacks[sq] | antidiag_attacks[sq];
     queen_attacks[sq] = rook_attacks[sq] | bishop_attacks[sq];
   }
-  init_knight_attacks();
+  init_other_attacks();
 }
 
 void init_attack_masks(){
@@ -223,18 +222,18 @@ void init_magic(){
   init_rook_legal_moves();
 }
 
-U64 knight_attacks[64], king_attacks[64];
+U64 knight_attacks[64], king_attacks[64], pawn_attacks[2][64];
 
 void init_other_attacks(){
   for (int i = 0; i < 64; i++){
     U64 temp = (1ULL << i);
-    knight_attacks[i] = noNoEa(temp) | noEaEa(temp) | soEaEa(temp)
-                      | soSoEa(temp) | noNoWe(temp) | noWeWe(temp)
-                      | soWeWe(temp) | soSoWe(temp);
+    knight_attacks[i] = nortOne(noEaOne(temp)) | noEaOne(eastOne(temp)) | soEaOne(eastOne(temp))
+                      | soutOne(soEaOne(temp)) | nortOne(noWeOne(temp)) | noWeOne(westOne(temp))
+                      | soWeOne(westOne(temp)) | soutOne(soWeOne(temp));
     king_attacks[i] = noEaOne(temp) | nortOne(temp) | noWeOne(temp)
                       | westOne(temp) | soWeOne(temp) | soutOne(temp)
                       | soEaOne(temp) | eastOne(temp);
-    pawn_white_attacks[i] = noEaOne(temp) | noWeOne(temp);
-    pawn_black_attacks[i] = soEaOne(temp) | soWeOne(temp);
+    pawn_attacks[0][i] = noEaOne(temp) | noWeOne(temp);
+    pawn_attacks[1][i] = soEaOne(temp) | soWeOne(temp);
   }
 }

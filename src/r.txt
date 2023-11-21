@@ -1,0 +1,9930 @@
+Hello, World!
+18437455399478099968 0
+57174 0
+18437456498989727744 0
+18437456503284695040 0
+18437456498989727744 0
+18437456498989727744 0
+18437457602796322816 0
+18437457602796322816 0
+18437481926278250496 0
+18437481960637988864 0
+18437499674182090752 0
+18437499674182090752 0
+18437455399478099968 0
+18437455399478099968 0
+18437596136966455296 0
+18437596136966455296 0
+18437596136966455296 0
+18437596686722269184 0
+18437455399478099968 0
+18437455399478099968 0
+18437455399478099968 0
+18437455399478099968 0
+
+rnbqkbnr
+pppppppp
+        
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18446462598732840960
+1 18 0: 57174 0
+
+rnbqkbnr
+ ppppppp
+p       
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18446182223267758080
+48 40 0: 18446525503783909680 14368
+
+rnbqkbnr
+ ppppppp
+p       
+        
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18446182223267758080
+12 20 0: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18446182223267758080
+12 28 0: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18446182223267758080
+0 1 0: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18446182223267758080
+6 21 0: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18446182223267758080
+6 23 0: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18446182223267758080
+8 16 0: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18446182223267758080
+8 24 1: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18446182223267758080
+9 17 0: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18446182223267758080
+9 25 1: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18446182223267758080
+14 22 0: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18446182223267758080
+14 30 1: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18446182223267758080
+15 23 0: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18446182223267758080
+15 31 1: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18446182223267758080
+18 1 0: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18446182223267758080
+18 24 0: 1
+
+rnbqkbnr
+ ppppppp
+p       
+        
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18446182223267758080
+18 28 0: 1
+
+rnbqkbnr
+ ppppppp
+p       
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18446182223267758080
+18 33 0: 1
+
+rnbqkbnr
+ ppppppp
+p       
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18446182223267758080
+18 35 0: 1
+18
+
+rnbqkbnr
+ ppppppp
+        
+p       
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18446181128051097600
+48 32 1: 18446525508078876976 14368
+
+rnbqkbnr
+ ppppppp
+        
+p       
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18446181128051097600
+12 20 0: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18446181128051097600
+12 28 0: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18446181128051097600
+0 1 0: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18446181128051097600
+6 21 0: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18446181128051097600
+6 23 0: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18446181128051097600
+8 16 0: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18446181128051097600
+8 24 1: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18446181128051097600
+9 17 0: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18446181128051097600
+9 25 1: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18446181128051097600
+14 22 0: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18446181128051097600
+14 30 1: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18446181128051097600
+15 23 0: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18446181128051097600
+15 31 1: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18446181128051097600
+18 1 0: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18446181128051097600
+18 24 0: 1
+
+rnbqkbnr
+ ppppppp
+        
+p       
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18446181128051097600
+18 28 0: 1
+
+rnbqkbnr
+ ppppppp
+        
+pN      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18446181128051097600
+18 33 0: 1
+
+rnbqkbnr
+ ppppppp
+        
+p  N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18446181128051097600
+18 35 0: 1
+18
+
+rnbqkbnr
+p pppppp
+ p      
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18445901847802675200
+49 41 0: 18338463491803931168 8224
+
+rnbqkbnr
+p pppppp
+ p      
+        
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18445901847802675200
+0 1 0: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18445901847802675200
+6 21 0: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18445901847802675200
+6 23 0: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18445901847802675200
+8 16 0: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18445901847802675200
+8 24 1: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18445901847802675200
+9 17 0: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18445901847802675200
+9 25 1: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+18445901847802675200
+11 19 0: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+18445901847802675200
+11 27 1: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18445901847802675200
+12 20 0: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18445901847802675200
+12 28 1: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18445901847802675200
+14 22 0: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18445901847802675200
+14 30 1: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18445901847802675200
+15 23 0: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18445901847802675200
+15 31 1: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18445901847802675200
+18 1 0: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18445901847802675200
+18 24 0: 1
+
+rnbqkbnr
+p pppppp
+ p      
+        
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18445901847802675200
+18 28 0: 1
+
+rnbqkbnr
+p pppppp
+ p      
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18445901847802675200
+18 33 0: 1
+
+rnbqkbnr
+p pppppp
+ p      
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18445901847802675200
+18 35 0: 1
+20
+
+rnbqkbnr
+p pppppp
+        
+ p      
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18445899657369354240
+49 33 1: 18338463491803931168 8224
+
+rnbqkbnr
+p pppppp
+        
+ p      
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18445899657369354240
+0 1 0: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18445899657369354240
+6 21 0: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18445899657369354240
+6 23 0: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18445899657369354240
+8 16 0: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18445899657369354240
+8 24 1: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18445899657369354240
+9 17 0: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18445899657369354240
+9 25 1: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+18445899657369354240
+11 19 0: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+18445899657369354240
+11 27 1: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18445899657369354240
+12 20 0: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18445899657369354240
+12 28 1: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18445899657369354240
+14 22 0: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18445899657369354240
+14 30 1: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18445899657369354240
+15 23 0: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18445899657369354240
+15 31 1: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18445899657369354240
+18 1 0: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18445899657369354240
+18 24 0: 1
+
+rnbqkbnr
+p pppppp
+        
+ p      
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18445899657369354240
+18 28 0: 1
+
+rnbqkbnr
+p pppppp
+        
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18445899648779419648
+18 33 4: 1
+
+rnbqkbnr
+p pppppp
+        
+ p N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18445899657369354240
+18 35 0: 1
+20
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18445341096872509440
+50 42 0: 18410502217207985972 12320
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18445341096872509440
+12 20 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18445341096872509440
+12 28 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18445341096872509440
+0 1 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18445341096872509440
+6 21 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18445341096872509440
+6 23 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18445341096872509440
+8 16 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18445341096872509440
+8 24 1: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18445341096872509440
+9 17 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18445341096872509440
+9 25 1: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+18445341096872509440
+11 19 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+18445341096872509440
+11 27 1: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18445341096872509440
+14 22 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18445341096872509440
+14 30 1: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18445341096872509440
+15 23 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18445341096872509440
+15 31 1: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18445341096872509440
+18 1 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18445341096872509440
+18 24 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+        
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18445341096872509440
+18 28 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18445341096872509440
+18 33 0: 1
+
+rnbqkbnr
+pp ppppp
+  p     
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18445341096872509440
+18 35 0: 1
+20
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18445336716005867520
+50 34 1: 18410565172842872692 14368
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18445336716005867520
+12 20 0: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18445336716005867520
+12 28 0: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18445336716005867520
+0 1 0: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18445336716005867520
+6 21 0: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18445336716005867520
+6 23 0: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18445336716005867520
+8 16 0: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18445336716005867520
+8 24 1: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18445336716005867520
+9 17 0: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18445336716005867520
+9 25 1: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18445336716005867520
+14 22 0: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18445336716005867520
+14 30 1: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18445336716005867520
+15 23 0: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18445336716005867520
+15 31 1: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18445336716005867520
+18 1 0: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18445336716005867520
+18 24 0: 1
+
+rnbqkbnr
+pp ppppp
+        
+  p     
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18445336716005867520
+18 28 0: 1
+
+rnbqkbnr
+pp ppppp
+        
+ Np     
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18445336716005867520
+18 33 0: 1
+
+rnbqkbnr
+pp ppppp
+        
+  pN    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18445336716005867520
+18 35 0: 1
+18
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18444219595012177920
+51 43 0: 18401524881525181008 2048
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18444219595012177920
+0 1 0: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18444219595012177920
+6 21 0: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18444219595012177920
+6 23 0: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18444219595012177920
+8 16 0: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18444219595012177920
+8 24 1: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18444219595012177920
+9 17 0: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18444219595012177920
+9 25 1: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18444219595012177920
+12 20 0: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18444219595012177920
+12 28 1: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+        
+  N  P  
+PPPPP PP
+R BQKBNR
+
+2416637
+18444219595012177920
+13 21 0: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+     P  
+  N     
+PPPPP PP
+R BQKBNR
+
+537190397
+18444219595012177920
+13 29 1: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18444219595012177920
+14 22 0: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18444219595012177920
+14 30 1: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18444219595012177920
+15 23 0: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18444219595012177920
+15 31 1: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18444219595012177920
+18 1 0: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18444219595012177920
+18 24 0: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+        
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18444219595012177920
+18 28 0: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18444219595012177920
+18 33 0: 1
+
+rnbqkbnr
+ppp pppp
+   p    
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18444219595012177920
+18 35 0: 1
+20
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18444210833278894080
+51 35 1: 18338429123731529780 8224
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18444210833278894080
+0 1 0: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18444210833278894080
+6 21 0: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18444210833278894080
+6 23 0: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18444210833278894080
+8 16 0: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18444210833278894080
+8 24 1: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18444210833278894080
+9 17 0: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18444210833278894080
+9 25 1: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+18444210833278894080
+11 19 0: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+18444210833278894080
+11 27 1: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18444210833278894080
+12 20 0: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18444210833278894080
+12 28 1: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18444210833278894080
+14 22 0: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18444210833278894080
+14 30 1: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18444210833278894080
+15 23 0: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18444210833278894080
+15 31 1: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18444210833278894080
+18 1 0: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18444210833278894080
+18 24 0: 1
+
+rnbqkbnr
+ppp pppp
+        
+   p    
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18444210833278894080
+18 28 0: 1
+
+rnbqkbnr
+ppp pppp
+        
+ N p    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18444210833278894080
+18 33 0: 1
+
+rnbqkbnr
+ppp pppp
+        
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18444210798919155712
+18 35 4: 1
+20
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18441976591291514880
+52 44 0: 18410499174123121270 10272
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18441976591291514880
+0 1 0: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18441976591291514880
+6 21 0: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18441976591291514880
+6 23 0: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18441976591291514880
+8 16 0: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18441976591291514880
+8 24 1: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18441976591291514880
+9 17 0: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18441976591291514880
+9 25 1: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18441976591291514880
+12 20 0: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18441976591291514880
+12 28 1: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18441976591291514880
+14 22 0: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18441976591291514880
+14 30 1: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18441976591291514880
+15 23 0: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18441976591291514880
+15 31 1: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18441976591291514880
+18 1 0: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18441976591291514880
+18 24 0: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+        
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18441976591291514880
+18 28 0: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18441976591291514880
+18 33 0: 1
+
+rnbqkbnr
+pppp ppp
+    p   
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18441976591291514880
+18 35 0: 1
+18
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18441959067824947200
+52 36 1: 18338494361730249258 12328
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18441959067824947200
+12 20 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18441959067824947200
+12 28 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18441959067824947200
+0 1 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18441959067824947200
+6 21 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18441959067824947200
+6 23 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18441959067824947200
+8 16 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18441959067824947200
+8 24 1: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18441959067824947200
+9 17 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18441959067824947200
+9 25 1: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+18441959067824947200
+11 19 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+18441959067824947200
+11 27 1: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18441959067824947200
+14 22 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18441959067824947200
+14 30 1: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18441959067824947200
+15 23 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18441959067824947200
+15 31 1: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18441959067824947200
+18 1 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18441959067824947200
+18 24 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+    p   
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18441959067824947200
+18 28 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+ N  p   
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18441959067824947200
+18 33 0: 1
+
+rnbqkbnr
+pppp ppp
+        
+   Np   
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18441959067824947200
+18 35 0: 1
+20
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18437490583850188800
+53 45 0: 18338494342402830890 12328
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18437490583850188800
+12 20 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18437490583850188800
+12 28 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18437490583850188800
+0 1 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18437490583850188800
+6 21 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18437490583850188800
+6 23 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18437490583850188800
+8 16 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18437490583850188800
+8 24 1: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18437490583850188800
+9 17 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18437490583850188800
+9 25 1: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+18437490583850188800
+11 19 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+18437490583850188800
+11 27 1: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18437490583850188800
+14 22 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18437490583850188800
+14 30 1: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18437490583850188800
+15 23 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18437490583850188800
+15 31 1: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18437490583850188800
+18 1 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18437490583850188800
+18 24 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+        
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18437490583850188800
+18 28 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18437490583850188800
+18 33 0: 1
+
+rnbqkbnr
+ppppp pp
+     p  
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18437490583850188800
+18 35 0: 1
+20
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18437455536917053440
+53 37 1: 18338500875249658458 10248
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18437455536917053440
+0 1 0: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18437455536917053440
+6 21 0: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18437455536917053440
+6 23 0: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18437455536917053440
+8 16 0: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18437455536917053440
+8 24 1: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18437455536917053440
+9 17 0: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18437455536917053440
+9 25 1: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18437455536917053440
+12 20 0: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18437455536917053440
+12 28 1: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18437455536917053440
+14 22 0: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18437455536917053440
+14 30 1: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18437455536917053440
+15 23 0: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18437455536917053440
+15 31 1: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18437455536917053440
+18 1 0: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18437455536917053440
+18 24 0: 1
+
+rnbqkbnr
+ppppp pp
+        
+     p  
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18437455536917053440
+18 28 0: 1
+
+rnbqkbnr
+ppppp pp
+        
+ N   p  
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18437455536917053440
+18 33 0: 1
+
+rnbqkbnr
+ppppp pp
+        
+   N p  
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18437455536917053440
+18 35 0: 1
+18
+
+rnbqkbnr
+pppppp p
+      p 
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18428518568967536640
+54 46 0: 18338552311772618794 8232
+
+rnbqkbnr
+pppppp p
+      p 
+        
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18428518568967536640
+0 1 0: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18428518568967536640
+6 21 0: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18428518568967536640
+6 23 0: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18428518568967536640
+8 16 0: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18428518568967536640
+8 24 1: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18428518568967536640
+9 17 0: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18428518568967536640
+9 25 1: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+18428518568967536640
+11 19 0: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+18428518568967536640
+11 27 1: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18428518568967536640
+12 20 0: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18428518568967536640
+12 28 1: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18428518568967536640
+14 22 0: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18428518568967536640
+14 30 1: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18428518568967536640
+15 23 0: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18428518568967536640
+15 31 1: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18428518568967536640
+18 1 0: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18428518568967536640
+18 24 0: 1
+
+rnbqkbnr
+pppppp p
+      p 
+        
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18428518568967536640
+18 28 0: 1
+
+rnbqkbnr
+pppppp p
+      p 
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18428518568967536640
+18 33 0: 1
+
+rnbqkbnr
+pppppp p
+      p 
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18428518568967536640
+18 35 0: 1
+20
+
+rnbqkbnr
+pppppp p
+        
+      p 
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18428448475101265920
+54 38 1: 18338578772111405620 12320
+
+rnbqkbnr
+pppppp p
+        
+      p 
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18428448475101265920
+12 20 0: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18428448475101265920
+12 28 0: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18428448475101265920
+0 1 0: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18428448475101265920
+6 21 0: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18428448475101265920
+6 23 0: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18428448475101265920
+8 16 0: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18428448475101265920
+8 24 1: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18428448475101265920
+9 17 0: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18428448475101265920
+9 25 1: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+18428448475101265920
+11 19 0: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+18428448475101265920
+11 27 1: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18428448475101265920
+14 22 0: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18428448475101265920
+14 30 1: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18428448475101265920
+15 23 0: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18428448475101265920
+15 31 1: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18428448475101265920
+18 1 0: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18428448475101265920
+18 24 0: 1
+
+rnbqkbnr
+pppppp p
+        
+      p 
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18428448475101265920
+18 28 0: 1
+
+rnbqkbnr
+pppppp p
+        
+ N    p 
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18428448475101265920
+18 33 0: 1
+
+rnbqkbnr
+pppppp p
+        
+   N  p 
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18428448475101265920
+18 35 0: 1
+20
+
+rnbqkbnr
+ppppppp 
+       p
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18410574539202232320
+55 47 0: 18446638658571214858 8200
+
+rnbqkbnr
+ppppppp 
+       p
+        
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18410574539202232320
+0 1 0: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18410574539202232320
+6 21 0: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18410574539202232320
+6 23 0: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18410574539202232320
+8 16 0: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18410574539202232320
+8 24 1: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18410574539202232320
+9 17 0: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18410574539202232320
+9 25 1: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+18410574539202232320
+11 19 0: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+18410574539202232320
+11 27 1: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18410574539202232320
+12 20 0: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18410574539202232320
+12 28 1: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18410574539202232320
+14 22 0: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18410574539202232320
+14 30 1: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18410574539202232320
+15 23 0: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18410574539202232320
+15 31 1: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18410574539202232320
+18 1 0: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18410574539202232320
+18 24 0: 1
+
+rnbqkbnr
+ppppppp 
+       p
+        
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18410574539202232320
+18 28 0: 1
+
+rnbqkbnr
+ppppppp 
+       p
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18410574539202232320
+18 33 0: 1
+
+rnbqkbnr
+ppppppp 
+       p
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18410574539202232320
+18 35 0: 1
+20
+
+rnbqkbnr
+ppppppp 
+        
+       p
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18410434351469690880
+55 39 1: 18446639208327028746 8200
+
+rnbqkbnr
+ppppppp 
+        
+       p
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18410434351469690880
+0 1 0: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18410434351469690880
+6 21 0: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18410434351469690880
+6 23 0: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18410434351469690880
+8 16 0: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18410434351469690880
+8 24 1: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18410434351469690880
+9 17 0: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18410434351469690880
+9 25 1: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+18410434351469690880
+11 19 0: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+18410434351469690880
+11 27 1: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18410434351469690880
+12 20 0: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18410434351469690880
+12 28 1: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18410434351469690880
+14 22 0: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18410434351469690880
+14 30 1: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18410434351469690880
+15 23 0: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18410434351469690880
+15 31 1: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18410434351469690880
+18 1 0: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18410434351469690880
+18 24 0: 1
+
+rnbqkbnr
+ppppppp 
+        
+       p
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18410434351469690880
+18 28 0: 1
+
+rnbqkbnr
+ppppppp 
+        
+ N     p
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18410434351469690880
+18 33 0: 1
+
+rnbqkbnr
+ppppppp 
+        
+   N   p
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18410434351469690880
+18 35 0: 1
+20
+
+r bqkbnr
+pppppppp
+n       
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18302348510168612864
+57 40 0: 18338434688943929399 14368
+
+r bqkbnr
+pppppppp
+n       
+        
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18302348510168612864
+12 20 0: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18302348510168612864
+12 28 0: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18302348510168612864
+0 1 0: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18302348510168612864
+6 21 0: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18302348510168612864
+6 23 0: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18302348510168612864
+8 16 0: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18302348510168612864
+8 24 1: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18302348510168612864
+9 17 0: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18302348510168612864
+9 25 1: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18302348510168612864
+14 22 0: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18302348510168612864
+14 30 1: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18302348510168612864
+15 23 0: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18302348510168612864
+15 31 1: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18302348510168612864
+18 1 0: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18302348510168612864
+18 24 0: 1
+
+r bqkbnr
+pppppppp
+n       
+        
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18302348510168612864
+18 28 0: 1
+
+r bqkbnr
+pppppppp
+n       
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18302348510168612864
+18 33 0: 1
+
+r bqkbnr
+pppppppp
+n       
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18302348510168612864
+18 35 0: 1
+18
+
+r bqkbnr
+pppppppp
+  n     
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+18302351808703496192
+57 42 0: 18338444584380807217 14368
+
+r bqkbnr
+pppppppp
+  n     
+        
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+18302351808703496192
+12 20 0: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+18302351808703496192
+12 28 0: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+18302351808703496192
+0 1 0: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+18302351808703496192
+6 21 0: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+18302351808703496192
+6 23 0: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+18302351808703496192
+8 16 0: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+18302351808703496192
+8 24 1: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+18302351808703496192
+9 17 0: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+18302351808703496192
+9 25 1: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+18302351808703496192
+14 22 0: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+18302351808703496192
+14 30 1: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+18302351808703496192
+15 23 0: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+18302351808703496192
+15 31 1: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+18302351808703496192
+18 1 0: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+18302351808703496192
+18 24 0: 1
+
+r bqkbnr
+pppppppp
+  n     
+        
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+18302351808703496192
+18 28 0: 1
+
+r bqkbnr
+pppppppp
+  n     
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+18302351808703496192
+18 33 0: 1
+
+r bqkbnr
+pppppppp
+  n     
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+18302351808703496192
+18 35 0: 1
+18
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N     
+PPPPPPPP
+R BQqBNR
+
+327661
+17870001846429417488
+59 4 4: 18328254241608579112 14376
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N     
+PPPPPPPP
+R B QBNR
+
+327669
+17870001846429417472
+3 4 4: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N P   
+PPPP PPP
+R BQqBNR
+
+1372141
+17870001846429417488
+12 20 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    P   
+  N     
+PPPP PPP
+R BQqBNR
+
+268759021
+17870001846429417488
+12 28 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N     
+PPPPPPPP
+ RBQqBNR
+
+327662
+17870001846429417488
+0 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N     
+PPPPPPPP
+R B QBNR
+
+327669
+17870001846429417472
+3 4 4: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N  N  
+PPPPPPPP
+R BQqB R
+
+2424749
+17870001846429417488
+6 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N    N
+PPPPPPPP
+R BQqB R
+
+8716205
+17870001846429417488
+6 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+P N     
+ PPPPPPP
+R BQqBNR
+
+392941
+17870001846429417488
+8 16 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+P       
+  N     
+ PPPPPPP
+R BQqBNR
+
+17104621
+17870001846429417488
+8 24 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+ PN     
+P PPPPPP
+R BQqBNR
+
+458221
+17870001846429417488
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+ P      
+  N     
+P PPPPPP
+R BQqBNR
+
+33881581
+17870001846429417488
+9 25 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N   P 
+PPPPPP P
+R BQqBNR
+
+4505581
+17870001846429417488
+14 22 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+      P 
+  N     
+PPPPPP P
+R BQqBNR
+
+1074053101
+17870001846429417488
+14 30 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N    P
+PPPPPPP 
+R BQqBNR
+
+8683501
+17870001846429417488
+15 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+       P
+  N     
+PPPPPPP 
+R BQqBNR
+
+2147778541
+17870001846429417488
+15 31 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+        
+PPPPPPPP
+RNBQqBNR
+
+65519
+17870001846429417488
+18 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+N       
+        
+PPPPPPPP
+R BQqBNR
+
+16842733
+17870001846429417488
+18 24 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    N   
+        
+PPPPPPPP
+R BQqBNR
+
+268500973
+17870001846429417488
+18 28 0: 1
+
+rnb kbnr
+pppppppp
+        
+ N      
+        
+        
+PPPPPPPP
+R BQqBNR
+
+8590000109
+17870001846429417488
+18 33 0: 1
+
+rnb kbnr
+pppppppp
+        
+   N    
+        
+        
+PPPPPPPP
+R BQqBNR
+
+34359803885
+17870001846429417488
+18 35 0: 1
+20
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N     
+PPPPPPPP
+R BQKqNR
+
+327645
+17870001846429417504
+59 5 4: 18337261346659269232 6160
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  NP    
+PPP PPPP
+R BQKqNR
+
+849885
+17870001846429417504
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+   P    
+  N     
+PPP PPPP
+R BQKqNR
+
+134543325
+17870001846429417504
+11 27 0: 1
+2
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N     
+qPPPPPPP
+R BQKBNR
+
+327421
+17870001846429417728
+59 8 4: 18337280042719197747 6160
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  NP    
+qPP PPPP
+R BQKBNR
+
+849661
+17870001846429417728
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+   P    
+  N     
+qPP PPPP
+R BQKBNR
+
+134543101
+17870001846429417728
+11 27 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N     
+qPPPPPPP
+ RBQKBNR
+
+327422
+17870001846429417728
+0 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N     
+RPPPPPPP
+  BQKBNR
+
+327676
+17870001846429417472
+0 8 4: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N  N  
+qPPPPPPP
+R BQKB R
+
+2424509
+17870001846429417728
+6 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N    N
+qPPPPPPP
+R BQKB R
+
+8715965
+17870001846429417728
+6 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+ PN     
+q PPPPPP
+R BQKBNR
+
+457981
+17870001846429417728
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+ P      
+  N     
+q PPPPPP
+R BQKBNR
+
+33881341
+17870001846429417728
+9 25 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N  P  
+qPPPP PP
+R BQKBNR
+
+2416381
+17870001846429417728
+13 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     P  
+  N     
+qPPPP PP
+R BQKBNR
+
+537190141
+17870001846429417728
+13 29 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N   P 
+qPPPPP P
+R BQKBNR
+
+4505341
+17870001846429417728
+14 22 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+      P 
+  N     
+qPPPPP P
+R BQKBNR
+
+1074052861
+17870001846429417728
+14 30 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N    P
+qPPPPPP 
+R BQKBNR
+
+8683261
+17870001846429417728
+15 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+       P
+  N     
+qPPPPPP 
+R BQKBNR
+
+2147778301
+17870001846429417728
+15 31 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+        
+qPPPPPPP
+RNBQKBNR
+
+65279
+17870001846429417728
+18 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+        
+NPPPPPPP
+R BQKBNR
+
+65533
+17870001846429417472
+18 8 4: 1
+
+rnb kbnr
+pppppppp
+        
+        
+N       
+        
+qPPPPPPP
+R BQKBNR
+
+16842493
+17870001846429417728
+18 24 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    N   
+        
+qPPPPPPP
+R BQKBNR
+
+268500733
+17870001846429417728
+18 28 0: 1
+
+rnb kbnr
+pppppppp
+        
+ N      
+        
+        
+qPPPPPPP
+R BQKBNR
+
+8589999869
+17870001846429417728
+18 33 0: 1
+
+rnb kbnr
+pppppppp
+        
+   N    
+        
+        
+qPPPPPPP
+R BQKBNR
+
+34359803645
+17870001846429417728
+18 35 0: 1
+20
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N     
+PPPqPPPP
+R BQKBNR
+
+325629
+17870001846429419520
+59 11 4: 18337402359161568828 7188
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  Nq    
+PPP PPPP
+R BQKBNR
+
+851965
+17870001846429419520
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+   q    
+  N     
+PPP PPPP
+R BQKBNR
+
+134545405
+17870001846429419520
+11 27 0: 1
+
+rnb kbnr
+pppppppp
+        
+   q    
+        
+  N     
+PPP PPPP
+R BQKBNR
+
+34360066045
+17870001846429419520
+11 35 0: 1
+
+rnb kbnr
+pppppppp
+   q    
+        
+        
+  N     
+PPP PPPP
+R BQKBNR
+
+8796093349885
+17870001846429419520
+11 43 0: 1
+
+rnb kbnr
+pppqpppp
+        
+        
+        
+  N     
+PPP PPPP
+R BQKBNR
+
+2251799814012925
+17867750046615734272
+11 51 4: 1
+5
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N     
+PPPPqPPP
+R BQKBNR
+
+323581
+17870001846429421568
+59 12 4: 18337315962589165880 6160
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N  q  
+PPPP PPP
+R BQKBNR
+
+2424829
+17870001846429421568
+12 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+      q 
+  N     
+PPPP PPP
+R BQKBNR
+
+1074069501
+17870001846429421568
+12 30 0: 1
+
+rnb kbnr
+pppppppp
+        
+       q
+        
+  N     
+PPPP PPP
+R BQKBNR
+
+549756141565
+17870001846429421568
+12 39 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  NP    
+PPP qPPP
+R BQKBNR
+
+845821
+17870001846429421568
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+   P    
+  N     
+PPP qPPP
+R BQKBNR
+
+134539261
+17870001846429421568
+11 27 0: 1
+5
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N     
+PPPPPqPP
+R BQKBNR
+
+319485
+17870001846429425664
+59 13 4: 18409371899645817200 4112
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N     
+PPPPPqPP
+ RBQKBNR
+
+319486
+17870001846429425664
+0 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N  N  
+PPPPPqPP
+R BQKB R
+
+2416573
+17870001846429425664
+6 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N    N
+PPPPPqPP
+R BQKB R
+
+8708029
+17870001846429425664
+6 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+P N     
+ PPPPqPP
+R BQKBNR
+
+384765
+17870001846429425664
+8 16 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+P       
+  N     
+ PPPPqPP
+R BQKBNR
+
+17096445
+17870001846429425664
+8 24 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+ PN     
+P PPPqPP
+R BQKBNR
+
+450045
+17870001846429425664
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+ P      
+  N     
+P PPPqPP
+R BQKBNR
+
+33873405
+17870001846429425664
+9 25 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  NP    
+PPP PqPP
+R BQKBNR
+
+841725
+17870001846429425664
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+   P    
+  N     
+PPP PqPP
+R BQKBNR
+
+134535165
+17870001846429425664
+11 27 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N   P 
+PPPPPq P
+R BQKBNR
+
+4497405
+17870001846429425664
+14 22 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+      P 
+  N     
+PPPPPq P
+R BQKBNR
+
+1074044925
+17870001846429425664
+14 30 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N    P
+PPPPPqP 
+R BQKBNR
+
+8675325
+17870001846429425664
+15 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+       P
+  N     
+PPPPPqP 
+R BQKBNR
+
+2147770365
+17870001846429425664
+15 31 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+        
+PPPPPqPP
+RNBQKBNR
+
+57343
+17870001846429425664
+18 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+N       
+        
+PPPPPqPP
+R BQKBNR
+
+16834557
+17870001846429425664
+18 24 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    N   
+        
+PPPPPqPP
+R BQKBNR
+
+268492797
+17870001846429425664
+18 28 0: 1
+
+rnb kbnr
+pppppppp
+        
+ N      
+        
+        
+PPPPPqPP
+R BQKBNR
+
+8589991933
+17870001846429425664
+18 33 0: 1
+
+rnb kbnr
+pppppppp
+        
+   N    
+        
+        
+PPPPPqPP
+R BQKBNR
+
+34359795709
+17870001846429425664
+18 35 0: 1
+18
+
+rnb kbnr
+pppppppp
+        
+        
+        
+q N     
+PPPPPPPP
+R BQKBNR
+
+327677
+17870001846429483008
+59 16 0: 18409373001217094432 4096
+
+rnb kbnr
+pppppppp
+        
+        
+        
+q N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+17870001846429483008
+0 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+q N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+17870001846429483008
+6 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+q N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+17870001846429483008
+6 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+P N     
+P PPPPPP
+R BQKBNR
+
+392701
+17870001846429417472
+9 16 4: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+qPN     
+P PPPPPP
+R BQKBNR
+
+458237
+17870001846429483008
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+ P      
+q N     
+P PPPPPP
+R BQKBNR
+
+33881597
+17870001846429483008
+9 25 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+q NP    
+PPP PPPP
+R BQKBNR
+
+849917
+17870001846429483008
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+   P    
+q N     
+PPP PPPP
+R BQKBNR
+
+134543357
+17870001846429483008
+11 27 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+q N  P  
+PPPPP PP
+R BQKBNR
+
+2416637
+17870001846429483008
+13 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     P  
+q N     
+PPPPP PP
+R BQKBNR
+
+537190397
+17870001846429483008
+13 29 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+q N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+17870001846429483008
+14 22 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+      P 
+q N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+17870001846429483008
+14 30 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+q N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+17870001846429483008
+15 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+       P
+q N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+17870001846429483008
+15 31 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+q       
+PPPPPPPP
+RNBQKBNR
+
+65535
+17870001846429483008
+18 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+N       
+q       
+PPPPPPPP
+R BQKBNR
+
+16842749
+17870001846429483008
+18 24 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    N   
+q       
+PPPPPPPP
+R BQKBNR
+
+268500989
+17870001846429483008
+18 28 0: 1
+
+rnb kbnr
+pppppppp
+        
+ N      
+        
+q       
+PPPPPPPP
+R BQKBNR
+
+8590000125
+17870001846429483008
+18 33 0: 1
+
+rnb kbnr
+pppppppp
+        
+   N    
+        
+q       
+PPPPPPPP
+R BQKBNR
+
+34359803901
+17870001846429483008
+18 35 0: 1
+19
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  Nq    
+PPPPPPPP
+R BQKBNR
+
+327677
+17870001846429941760
+59 19 0: 18373394735994010736 7184
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  NP    
+PP PPPPP
+R BQKBNR
+
+850941
+17870001846429417472
+10 19 4: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  NP    
+PPPP PPP
+R BQKBNR
+
+847869
+17870001846429417472
+12 19 4: 1
+2
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N q   
+PPPPPPPP
+R BQKBNR
+
+327677
+17870001846430466048
+59 20 0: 18337446426595588208 6160
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  NPq   
+PPP PPPP
+R BQKBNR
+
+849917
+17870001846430466048
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+   P    
+  N q   
+PPP PPPP
+R BQKBNR
+
+134543357
+17870001846430466048
+11 27 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N q   
+PPPPPPPP
+ RBQKBNR
+
+327678
+17870001846430466048
+0 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N qN  
+PPPPPPPP
+R BQKB R
+
+2424765
+17870001846430466048
+6 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N q  N
+PPPPPPPP
+R BQKB R
+
+8716221
+17870001846430466048
+6 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+P N q   
+ PPPPPPP
+R BQKBNR
+
+392957
+17870001846430466048
+8 16 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+P       
+  N q   
+ PPPPPPP
+R BQKBNR
+
+17104637
+17870001846430466048
+8 24 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+ PN q   
+P PPPPPP
+R BQKBNR
+
+458237
+17870001846430466048
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+ P      
+  N q   
+P PPPPPP
+R BQKBNR
+
+33881597
+17870001846430466048
+9 25 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N P   
+PPP PPPP
+R BQKBNR
+
+1374205
+17870001846429417472
+11 20 4: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N P   
+PPPPP PP
+R BQKBNR
+
+1368061
+17870001846429417472
+13 20 4: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N qP  
+PPPPP PP
+R BQKBNR
+
+2416637
+17870001846430466048
+13 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     P  
+  N q   
+PPPPP PP
+R BQKBNR
+
+537190397
+17870001846430466048
+13 29 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N q P 
+PPPPPP P
+R BQKBNR
+
+4505597
+17870001846430466048
+14 22 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+      P 
+  N q   
+PPPPPP P
+R BQKBNR
+
+1074053117
+17870001846430466048
+14 30 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N q  P
+PPPPPPP 
+R BQKBNR
+
+8683517
+17870001846430466048
+15 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+       P
+  N q   
+PPPPPPP 
+R BQKBNR
+
+2147778557
+17870001846430466048
+15 31 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+    q   
+PPPPPPPP
+RNBQKBNR
+
+65535
+17870001846430466048
+18 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+N       
+    q   
+PPPPPPPP
+R BQKBNR
+
+16842749
+17870001846430466048
+18 24 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    N   
+    q   
+PPPPPPPP
+R BQKBNR
+
+268500989
+17870001846430466048
+18 28 0: 1
+
+rnb kbnr
+pppppppp
+        
+ N      
+        
+    q   
+PPPPPPPP
+R BQKBNR
+
+8590000125
+17870001846430466048
+18 33 0: 1
+
+rnb kbnr
+pppppppp
+        
+   N    
+        
+    q   
+PPPPPPPP
+R BQKBNR
+
+34359803901
+17870001846430466048
+18 35 0: 1
+22
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N  q  
+PPPPPPPP
+R BQKBNR
+
+327677
+17870001846431514624
+59 21 0: 18337290613654581326 4100
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N  P  
+PPPP PPP
+R BQKBNR
+
+2420733
+17870001846429417472
+12 21 4: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+17870001846429417472
+6 21 4: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N  P  
+PPPP PPP
+R BQKBNR
+
+2420733
+17870001846429417472
+12 21 4: 1
+
+rnb kbnr
+pppppppp
+        
+        
+        
+  N  P  
+PPPPPP P
+R BQKBNR
+
+2408445
+17870001846429417472
+14 21 4: 1
+4
+
+rnb kbnr
+pppppppp
+        
+        
+q       
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+17870001846446194688
+59 24 0: 8240231843576362350 5124
+
+rnb kbnr
+pppppppp
+        
+        
+q       
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+17870001846446194688
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+17870001846429417472
+18 24 4: 1
+2
+
+rnb kbnr
+pppppppp
+        
+        
+   q    
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+17870001846563635200
+59 27 0: 18328289549848684622 2052
+
+rnb kbnr
+pppppppp
+        
+        
+   q    
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+17870001846563635200
+11 19 0: 1
+1
+
+rnb kbnr
+pppppppp
+        
+        
+    q   
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+17870001846697852928
+59 28 0: 18364399693682209870 5124
+
+rnb kbnr
+pppppppp
+        
+        
+    q   
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+17870001846697852928
+0 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    q   
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+17870001846697852928
+6 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    q   
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+17870001846697852928
+6 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    q   
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+17870001846697852928
+8 16 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+P   q   
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+17870001846697852928
+8 24 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    q   
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+17870001846697852928
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+ P  q   
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+17870001846697852928
+9 25 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    q   
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+17870001846697852928
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+   Pq   
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+17870001846697852928
+11 27 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    q   
+  N  P  
+PPPPP PP
+R BQKBNR
+
+2416637
+17870001846697852928
+13 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    qP  
+  N     
+PPPPP PP
+R BQKBNR
+
+537190397
+17870001846697852928
+13 29 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    q   
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+17870001846697852928
+14 22 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    q P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+17870001846697852928
+14 30 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    q   
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+17870001846697852928
+15 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    q  P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+17870001846697852928
+15 31 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    q   
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+17870001846697852928
+18 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+N   q   
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+17870001846697852928
+18 24 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+17870001846429417472
+18 28 4: 1
+
+rnb kbnr
+pppppppp
+        
+ N      
+    q   
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+17870001846697852928
+18 33 0: 1
+
+rnb kbnr
+pppppppp
+        
+   N    
+    q   
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+17870001846697852928
+18 35 0: 1
+20
+
+rnb kbnr
+pppppppp
+        
+        
+     q  
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+17870001846966288384
+59 29 0: 18338561410951325774 2052
+
+rnb kbnr
+pppppppp
+        
+        
+     q  
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+17870001846966288384
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+   P q  
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+17870001846966288384
+11 27 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     q  
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+17870001846966288384
+0 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     q  
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+17870001846966288384
+6 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     q  
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+17870001846966288384
+6 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     q  
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+17870001846966288384
+8 16 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+P    q  
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+17870001846966288384
+8 24 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     q  
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+17870001846966288384
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+ P   q  
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+17870001846966288384
+9 25 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     q  
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+17870001846966288384
+12 20 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    Pq  
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+17870001846966288384
+12 28 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     q  
+  N  P  
+PPPPP PP
+R BQKBNR
+
+2416637
+17870001846966288384
+13 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     q  
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+17870001846966288384
+14 22 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     qP 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+17870001846966288384
+14 30 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     q  
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+17870001846966288384
+15 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     q P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+17870001846966288384
+15 31 1: 1
+
+rnb kbnr
+pppppppp
+        
+        
+     q  
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+17870001846966288384
+18 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+N    q  
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+17870001846966288384
+18 24 0: 1
+
+rnb kbnr
+pppppppp
+        
+        
+    Nq  
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+17870001846966288384
+18 28 0: 1
+
+rnb kbnr
+pppppppp
+        
+ N      
+     q  
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+17870001846966288384
+18 33 0: 1
+
+rnb kbnr
+pppppppp
+        
+   N    
+     q  
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+17870001846966288384
+18 35 0: 1
+21
+
+rnb kbnr
+pppppppp
+        
+ q      
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+17870001855019352064
+59 33 0: 18337294276006392352 4096
+
+rnb kbnr
+pppppppp
+        
+ q      
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+17870001855019352064
+0 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+17870001855019352064
+6 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+17870001855019352064
+6 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+17870001855019352064
+8 16 0: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+17870001855019352064
+8 24 1: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+17870001855019352064
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+17870001855019352064
+9 25 1: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+17870001855019352064
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+17870001855019352064
+11 27 1: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+        
+  N  P  
+PPPPP PP
+R BQKBNR
+
+2416637
+17870001855019352064
+13 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+     P  
+  N     
+PPPPP PP
+R BQKBNR
+
+537190397
+17870001855019352064
+13 29 1: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+17870001855019352064
+14 22 0: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+17870001855019352064
+14 30 1: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+17870001855019352064
+15 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+17870001855019352064
+15 31 1: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+17870001855019352064
+18 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+17870001855019352064
+18 24 0: 1
+
+rnb kbnr
+pppppppp
+        
+ q      
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+17870001855019352064
+18 28 0: 1
+
+rnb kbnr
+pppppppp
+        
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+17870001846429417472
+18 33 4: 1
+
+rnb kbnr
+pppppppp
+        
+ q N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+17870001855019352064
+18 35 0: 1
+20
+
+rnb kbnr
+pppppppp
+        
+  q     
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+17870001863609286656
+59 34 0: 18338445456209424650 4096
+
+rnb kbnr
+pppppppp
+        
+  q     
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+17870001863609286656
+0 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+17870001863609286656
+6 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+17870001863609286656
+6 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+17870001863609286656
+8 16 0: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+17870001863609286656
+8 24 1: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+17870001863609286656
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+17870001863609286656
+9 25 1: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+17870001863609286656
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+17870001863609286656
+11 27 1: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+        
+  N  P  
+PPPPP PP
+R BQKBNR
+
+2416637
+17870001863609286656
+13 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+     P  
+  N     
+PPPPP PP
+R BQKBNR
+
+537190397
+17870001863609286656
+13 29 1: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+17870001863609286656
+14 22 0: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+17870001863609286656
+14 30 1: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+17870001863609286656
+15 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+17870001863609286656
+15 31 1: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+17870001863609286656
+18 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+17870001863609286656
+18 24 0: 1
+
+rnb kbnr
+pppppppp
+        
+  q     
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+17870001863609286656
+18 28 0: 1
+
+rnb kbnr
+pppppppp
+        
+ Nq     
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+17870001863609286656
+18 33 0: 1
+
+rnb kbnr
+pppppppp
+        
+  qN    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+17870001863609286656
+18 35 0: 1
+20
+
+rnb kbnr
+pppppppp
+        
+    q   
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+17870001915148894208
+59 36 0: 18338443274537971978 4096
+
+rnb kbnr
+pppppppp
+        
+    q   
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+17870001915148894208
+0 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+17870001915148894208
+6 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+17870001915148894208
+6 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+17870001915148894208
+8 16 0: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+17870001915148894208
+8 24 1: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+17870001915148894208
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+17870001915148894208
+9 25 1: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+17870001915148894208
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+17870001915148894208
+11 27 1: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+        
+  N  P  
+PPPPP PP
+R BQKBNR
+
+2416637
+17870001915148894208
+13 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+     P  
+  N     
+PPPPP PP
+R BQKBNR
+
+537190397
+17870001915148894208
+13 29 1: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+17870001915148894208
+14 22 0: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+17870001915148894208
+14 30 1: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+17870001915148894208
+15 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+17870001915148894208
+15 31 1: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+17870001915148894208
+18 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+17870001915148894208
+18 24 0: 1
+
+rnb kbnr
+pppppppp
+        
+    q   
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+17870001915148894208
+18 28 0: 1
+
+rnb kbnr
+pppppppp
+        
+ N  q   
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+17870001915148894208
+18 33 0: 1
+
+rnb kbnr
+pppppppp
+        
+   Nq   
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+17870001915148894208
+18 35 0: 1
+20
+
+rnb kbnr
+pppppppp
+        
+     q  
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+17870001983868370944
+59 37 0: 18373403347197240352 1024
+
+rnb kbnr
+pppppppp
+        
+     q  
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+17870001983868370944
+0 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+17870001983868370944
+6 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+17870001983868370944
+6 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+17870001983868370944
+8 16 0: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+17870001983868370944
+8 24 1: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+17870001983868370944
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+17870001983868370944
+9 25 1: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+17870001983868370944
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+17870001983868370944
+11 27 1: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+17870001983868370944
+12 20 0: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+17870001983868370944
+12 28 1: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+        
+  N  P  
+PPPPP PP
+R BQKBNR
+
+2416637
+17870001983868370944
+13 21 0: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+     P  
+  N     
+PPPPP PP
+R BQKBNR
+
+537190397
+17870001983868370944
+13 29 1: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+17870001983868370944
+14 22 0: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+17870001983868370944
+14 30 1: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+17870001983868370944
+15 23 0: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+17870001983868370944
+15 31 1: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+17870001983868370944
+18 1 0: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+17870001983868370944
+18 24 0: 1
+
+rnb kbnr
+pppppppp
+        
+     q  
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+17870001983868370944
+18 28 0: 1
+
+rnb kbnr
+pppppppp
+        
+ N   q  
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+17870001983868370944
+18 33 0: 1
+
+rnb kbnr
+pppppppp
+        
+   N q  
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+17870001983868370944
+18 35 0: 1
+22
+
+rnb kbnr
+pppppppp
+   q    
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+17870010642522439680
+59 43 0: 18338648045455648800 2048
+
+rnb kbnr
+pppppppp
+   q    
+        
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+17870010642522439680
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+   q    
+        
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+17870010642522439680
+11 27 0: 1
+
+rnb kbnr
+pppppppp
+   q    
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+17870010642522439680
+18 35 0: 1
+3
+
+rnb kbnr
+pppppppp
+    q   
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+17870019438615461888
+59 44 0: 18337513616641839904 4096
+
+rnb kbnr
+pppppppp
+    q   
+        
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+17870019438615461888
+0 1 0: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+17870019438615461888
+6 21 0: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+17870019438615461888
+6 23 0: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+17870019438615461888
+8 16 0: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+17870019438615461888
+8 24 1: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+17870019438615461888
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+17870019438615461888
+9 25 1: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+17870019438615461888
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+17870019438615461888
+11 27 1: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+        
+  N  P  
+PPPPP PP
+R BQKBNR
+
+2416637
+17870019438615461888
+13 21 0: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+     P  
+  N     
+PPPPP PP
+R BQKBNR
+
+537190397
+17870019438615461888
+13 29 1: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+17870019438615461888
+14 22 0: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+17870019438615461888
+14 30 1: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+17870019438615461888
+15 23 0: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+17870019438615461888
+15 31 1: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+17870019438615461888
+18 1 0: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+17870019438615461888
+18 24 0: 1
+
+rnb kbnr
+pppppppp
+    q   
+        
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+17870019438615461888
+18 28 0: 1
+
+rnb kbnr
+pppppppp
+    q   
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+17870019438615461888
+18 33 0: 1
+
+rnb kbnr
+pppppppp
+    q   
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+17870019438615461888
+18 35 0: 1
+20
+
+rnb kbnr
+pppppppp
+     q  
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+17870037030801506304
+59 45 0: 18337495992438710816 0
+
+rnb kbnr
+pppppppp
+     q  
+        
+        
+  N     
+PPPPPPPP
+ RBQKBNR
+
+327678
+17870037030801506304
+0 1 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+        
+  N  N  
+PPPPPPPP
+R BQKB R
+
+2424765
+17870037030801506304
+6 21 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+        
+  N    N
+PPPPPPPP
+R BQKB R
+
+8716221
+17870037030801506304
+6 23 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+        
+P N     
+ PPPPPPP
+R BQKBNR
+
+392957
+17870037030801506304
+8 16 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+P       
+  N     
+ PPPPPPP
+R BQKBNR
+
+17104637
+17870037030801506304
+8 24 1: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+        
+ PN     
+P PPPPPP
+R BQKBNR
+
+458237
+17870037030801506304
+9 17 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+ P      
+  N     
+P PPPPPP
+R BQKBNR
+
+33881597
+17870037030801506304
+9 25 1: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+17870037030801506304
+11 19 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+17870037030801506304
+11 27 1: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+        
+  N P   
+PPPP PPP
+R BQKBNR
+
+1372157
+17870037030801506304
+12 20 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+    P   
+  N     
+PPPP PPP
+R BQKBNR
+
+268759037
+17870037030801506304
+12 28 1: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+        
+  N  P  
+PPPPP PP
+R BQKBNR
+
+2416637
+17870037030801506304
+13 21 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+     P  
+  N     
+PPPPP PP
+R BQKBNR
+
+537190397
+17870037030801506304
+13 29 1: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+        
+  N   P 
+PPPPPP P
+R BQKBNR
+
+4505597
+17870037030801506304
+14 22 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+      P 
+  N     
+PPPPPP P
+R BQKBNR
+
+1074053117
+17870037030801506304
+14 30 1: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+        
+  N    P
+PPPPPPP 
+R BQKBNR
+
+8683517
+17870037030801506304
+15 23 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+       P
+  N     
+PPPPPPP 
+R BQKBNR
+
+2147778557
+17870037030801506304
+15 31 1: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+        
+        
+PPPPPPPP
+RNBQKBNR
+
+65535
+17870037030801506304
+18 1 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+N       
+        
+PPPPPPPP
+R BQKBNR
+
+16842749
+17870037030801506304
+18 24 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+        
+    N   
+        
+PPPPPPPP
+R BQKBNR
+
+268500989
+17870037030801506304
+18 28 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+ N      
+        
+        
+PPPPPPPP
+R BQKBNR
+
+8590000125
+17870037030801506304
+18 33 0: 1
+
+rnb kbnr
+pppppppp
+     q  
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+17870037030801506304
+18 35 0: 1
+22
+
+rnbqkb r
+pppppppp
+     n  
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+13834811764677541888
+62 45 0: 18410573935678617470 5140
+
+rnbqkb r
+pppppppp
+     n  
+        
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+13834811764677541888
+11 19 0: 1
+
+rnbqkb r
+pppppppp
+     n  
+        
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+13834811764677541888
+11 27 1: 1
+
+rnbqkb r
+pppppppp
+     n  
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+13834811764677541888
+18 35 0: 1
+3
+
+rnbqkb r
+pppppppp
+       n
+        
+        
+  N     
+PPPPPPPP
+R BQKBNR
+
+327677
+13834917317793808384
+62 47 0: 18446523291724166968 5136
+
+rnbqkb r
+pppppppp
+       n
+        
+        
+  NP    
+PPP PPPP
+R BQKBNR
+
+849917
+13834917317793808384
+11 19 0: 1
+
+rnbqkb r
+pppppppp
+       n
+        
+   P    
+  N     
+PPP PPPP
+R BQKBNR
+
+134543357
+13834917317793808384
+11 27 1: 1
+
+rnbqkb r
+pppppppp
+       n
+   N    
+        
+        
+PPPPPPPP
+R BQKBNR
+
+34359803901
+13834917317793808384
+18 35 0: 1
+3
+640
+57206 0
+18410573935678617470 5140
+18410573935678617470 5140
+18410573935678617470 5140
+18410573935678617470 5140
+18410573935678617470 5140
+18410573935678617470 5140
+18410572762891444846 4
+18338515220393126510 2052
+18410573955006035838 5140
+18410573955006035838 5140
+18410573935678617470 5140
+18410573935678617470 5140
+18410714673166972798 5140
+18410714673166972798 5140
+18446664029212522296 5136
+18446664578968336184 5136
+18410573935678617470 5140
+18410573935678617470 5140
+18337371676752248446 7188
+18337371676752247406 6148
+18337371676752245502 4116
+18337390407171924591 4
+18337371745472178031 1028
+18374526391194380910 2052
+18337390437506509438 2068
+18337371696084841086 4116
+18337530092595411566 6148
+18337372261150847598 4100
+18373418171252635246 5124
+18338638385355221614 2052
+18338499346185939822 2052
+18337373450641502830 4100
+18338515774709494382 4100
+18373418740544464494 1028
+18337530010789311342 4100
+18338657027321127534 4
+18338657057720526446 1028
+18337513617176556398 4100
+18337531176805491310 4
+18410573935678617470 5140
+18446523291724166968 5136
+18410494494705203005 5140
+18410494494705203002 5136
+18410494494705205052 7188
+18410494494705203192 5136
+18410494494705219512 5136
+18410494494738888506 5136
+18410494494705219384 5136
+18410565139405256568 5136
+18410494494718768952 5136
+3710754127714400057 5136
+18410494498144663352 5136
+18401435437056395264 2048
+18410494498178086712 5136
+18410565140730640184 5136
+18410495370912216888 5136
+18410495370878531384 5136
+18410565465822754616 5136
+18410714397064443704 5136
+18410714414277998392 5136
+18410705644038928432 6160
+18410714397030758200 5136
+18410644304242439992 5136
+57206 0
+18446523291724166968 5136
+18446523291724166968 5136
+18446523291724166968 5136
+18446523291724166968 5136
+18446523291724166968 5136
+18446523291724166968 5136
+18437481926278250496 0
+18446519998650266679 5140
+18446532382056068920 5136
+18446532382056068920 5136
+18446523291724166968 5136
+18446523291724166968 5136
+18446664029212522296 5136
+18446664029212522296 5136
+18446664029212522296 5136
+18410494494705203005 5140
+18446523291724166968 5136
+18446523291724166968 5136
+18436329499571264532 7188
+18436329499571271720 6144
+18436329499571286224 4112
+18445355429262459395 0
+18436366960444245255 1028
+18437530321240853006 2052
+18436348819747121208 2064
+18445374239666098288 4112
+18436490390001367040 6144
+18445377004692795392 4096
+18436422103079605248 5120
+18446647801471346688 2048
+18437459788985338112 2048
+18436338282897478144 4096
+18437517999571505664 4096
+18445460803796083712 1024
+18436608788494094592 4096
+18437733606153658880 0
+18437731437380912128 1024
+18445599724042064128 4096
+18445582373776269824 0
+18446523291724166968 5136
+18446523291724166968 5136
+122710 0
+18410213054121916221 5140
+3998694246670548797 7188
+4575445269993961277 5140
+4575445269993961277 5140
+4575445269993961277 5140
+4575445269993961277 5140
+18410502218256693045 5140
+4575444180154398519 5140
+4431329268021802805 5140
+4431329268021802805 5140
+4431328973816543029 5140
+4431328973816543029 5140
+4431469711304898357 5140
+4431469711304898357 5140
+9223297511508882740 5140
+9223298061264696628 5140
+3854859425352922687 5140
+3854859425352921661 4116
+3854859425352921717 4116
+3854859425352987189 4116
+3854859442600163893 6164
+3854859425352923701 6164
+3854859425352938037 4116
+3854860524877394741 4116
+3854586746666171957 7188
+3854859425365832245 4116
+3854859425365832245 4116
+3854860528287167029 4116
+3854859437365408309 4116
+3854859445888497205 5140
+3854859428775473717 4116
+3854859428775473717 4116
+17833760840348219957 6164
+3854860275756446261 4116
+3854860275756446261 4116
+3854798952330836533 6164
+3855080427190104629 4116
+3855080427190104629 4116
+3854859433943183927 4116
+4431328973816543029 5140
+4430203073909702453 7188
+4430203073909702461 7188
+4430203073909716853 5140
+18409367521157394999 4116
+4430203082634114871 5140
+4467428156759818047 7188
+4430204732840820541 7188
+4430203093375481717 5140
+4430344103602896693 7188
+4430203624752117557 5140
+4466302243028301621 5140
+4431469989542477621 7188
+18410495370929322549 6164
+4430205015234918197 5140
+4431329824358774581 5140
+4466303091158497077 5140
+3853953436429005367 4116
+4431541205464725301 5140
+4431541205330786101 5140
+4430415280735991605 5140
+4430415556813731637 5140
+4431328973816543029 5140
+9223156774020527412 5140
+4071038800308679990 5140
+4071038800308679998 5140
+4071038800308679996 5140
+4071038800308680052 5140
+4071041007921870134 5140
+4071038800308682036 7188
+4071038800308696372 5140
+4071041007934715700 5140
+4071038800321525044 5140
+4071038800321525044 5140
+4071041011277313844 5140
+4071038803664123188 5140
+4071038803664123188 5140
+18338435573536731188 4116
+18410496470642408756 7188
+4071039655007171892 5140
+4071039655007171892 5140
+4071251014642775860 5140
+4071253222256227636 5140
+4071253205076096308 5140
+4071253205076096308 5140
+16899926 0
+18410494520525992501 4116
+18410494520525992501 4116
+18410494520525992501 4116
+18410494520525992501 4116
+18410493421014364725 4116
+18410493421014364725 4116
+18410502218172215861 4116
+18410494538837866037 5140
+18410502511312712245 4116
+18410502511312712245 4116
+18410493421014364725 4116
+18410493421014364725 4116
+18410634158502720053 4116
+18410634158502720053 4116
+18446660752166760500 4116
+18446661301922574388 4116
+18410493421014364725 4116
+18410493421014364725 4116
+18409367521090223679 7188
+18409367521090222653 6164
+18409367521090237045 4116
+18409369180088973885 6164
+18409367540556001909 4116
+18409367529777477429 5140
+18445476591262187061 7188
+18409368632614401845 5140
+18445466690293233205 5140
+18410643232899906101 6164
+18409377167788636981 6164
+18410503067632316981 4116
+18445467538339542581 5140
+18410714448688215605 5140
+18409588524076643125 4116
+18409588800087274037 4116
+18410493421014364725 4116
+18446520014678405172 4116
+18338433623621579062 4116
+18338433623621514302 5140
+18338433623621513276 4116
+18338433623621513332 4116
+18338435831268259126 5140
+18338433623622563892 6164
+18338433623623626804 4116
+18338435831284314676 4116
+18338433623636521012 4116
+18338433623635472436 4116
+18338435834657255988 4116
+18338433627078668340 4116
+18338433627079716916 4116
+18338435573536665652 4116
+18401436459543824384 2048
+18338434478321053748 4116
+18338434478322102324 4116
+18338654634082185780 4116
+18338656841729193012 5140
+18338656824483000372 4116
+18338656824484048948 4116
+122710 0
+18410492317174477628 4116
+18410492321469444924 4116
+18410492317174477628 4116
+18410492317174477628 4116
+18410493420981072700 4116
+18410493420981072700 4116
+18410499911741354808 4112
+18410494500183422777 5136
+18410500307994751804 4116
+18410500307994751804 4116
+18410491217662849852 4116
+18410491217662849852 4116
+18410631955151205180 4116
+18410631955151205180 4116
+18446660752166760500 4116
+18446661301922574388 4116
+18410491217662849852 4116
+18410491217662849852 4116
+18409365214659428154 7184
+18409365214659361592 6160
+18409365214659375992 4112
+18409366942377589560 6160
+18409367433148396408 4112
+18409367456762902330 5136
+18445474319190867768 7184
+3566627961685620541 5140
+18445464486975141688 5136
+18410640995222076216 6160
+18409374934372350776 6160
+18410500799855899449 4112
+18445465339282863928 5136
+18410714375640086328 5136
+18409588519748383544 4112
+18409588761398883129 4112
+18410494507724585785 6160
+18446523304743287089 6160
+18338436913686395189 6164
+18338436913686395193 6160
+18338436913686395249 6160
+18338436917998206769 7184
+18338436913686527283 7184
+18338436913686395185 6160
+18338436913686411569 6160
+18338436913766743345 7184
+18338436913699895601 6160
+18338436913699895601 6160
+18338436917025061169 6160
+18338436917025061169 6160
+18338437776974821681 6160
+18338656816079322417 7184
+18338656816011950385 6160
+18338656816011950385 6160
+122710 0
+18410494507724585785 6160
+18410494512019553081 6160
+18410494507724585785 6160
+18410494507724585785 6160
+18410494512019553081 6160
+18410494512019553081 6160
+18410499911741354808 4112
+18410494500183422777 5136
+18410503580876553017 6160
+18410503580876553017 6160
+18410494507724585785 6160
+18410494507724585785 6160
+18410635245212941113 6160
+18410635245212941113 6160
+18446664042231642417 6160
+18446664591987456305 6160
+18410494507724585785 6160
+18410494507724585785 6160
+18409365283513054010 4112
+18409365214659361592 6160
+18409365214659375992 4112
+18409366352909776699 5136
+18409515057646679868 5140
+18409366942377589560 6160
+18409367433148396408 4112
+18409508512095746872 6160
+18409365799861973816 4112
+18409376333357136697 6160
+18445464486958364472 5136
+18410640995205299000 6160
+18409369462499980088 4112
+18410503050515199800 5136
+18410500799855899449 4112
+18445465339282863928 5136
+18409587328977548088 4112
+18410712146635928376 4112
+18410714375640086328 5136
+18409588519748383544 4112
+18409588761398883129 4112
+18410494507724585785 6160
+18446523304743287089 6160
+18338436913686395189 6164
+18338436913686395193 6160
+18338436913686395249 6160
+18338436917998206769 7184
+18338436913720081715 7184
+18338436913686395185 6160
+18338436913686411569 6160
+18338436913766808881 7184
+18338436913699961137 6160
+18338436913699961137 6160
+18338436917008283953 6160
+18338436917008283953 6160
+18338437776974821681 6160
+18338656816079322417 7184
+18338656816011950385 6160
+18338656816011950385 6160
+16965462 0
+18410494507724585785 6160
+18410494512019553081 6160
+18410494507724585785 6160
+18410494507724585785 6160
+18410494512019553081 6160
+18410494512019553081 6160
+18410499911741354808 4112
+18410499997758732095 16782356
+18410503580876618553 6160
+18410503580876618553 6160
+18410494507724585785 6160
+18410494507724585785 6160
+18410635245212941113 6160
+18410635245212941113 6160
+18446664042231642417 6160
+18446664591987456305 6160
+18410494507724585785 6160
+18410494507724585785 6160
+18409365214659359546 4112
+18409365214659361592 6160
+18409365214659375992 4112
+18409366352909775675 16912400
+18409515057613125436 5140
+18409366942377589560 6160
+18409367433148396408 4112
+18409508512095550264 6160
+18409365799861777208 4112
+18409376333373913912 16783376
+18445464486975141690 16782352
+18410640995222076216 16783376
+18409369462500111160 16912400
+18410503050515264312 4112
+18410500799855899448 4112
+18445465339282863930 5136
+18409587328977548088 16781328
+18410712146636059448 135184
+18410714375640085304 16781328
+18409570927595696440 135184
+18337496017382355256 135184
+18338445744172906809 137232
+18446523304743287089 6160
+18338436913686395189 6164
+18338436913686395193 6160
+18338436913686395249 6160
+18338436917998205745 16783376
+18338436913720081715 138256
+18338436913686395185 6160
+18338436913686411569 6160
+18338436913766808885 138260
+18338436913699764529 6160
+18338436913699764529 6160
+18338436917025061169 16783376
+18338436917025061169 16783376
+18338437776974821681 6160
+18338656816079321393 6160
+18338656816011950385 6160
+18338656816011950385 6160
+16965462 0
+18338445744172906809 137232
+18338445748467874105 137232
+18338445744172906809 137232
+18338445744172906809 137232
+18338445748467874105 137232
+18338445748467874105 137232
+18410462631458713912 135184
+18410497833095083839 16913428
+18338446021198297401 137232
+18338446021198297401 137232
+18338445744172906809 137232
+18338445744172906809 137232
+18338580988280647993 16912400
+18338580988280647993 16912400
+18446658548884643897 16777232
+18446659098640457785 16777232
+18338440250792292665 16912400
+18338440250792292665 16912400
+18337261544245769018 135184
+18337261544245770552 137232
+18337261544245784952 135184
+18337262648136250171 16912400
+18337402561042003772 136212
+18337279687329003832 137232
+18337296748083638648 135184
+18337420166125533496 137232
+18337301677507309880 135184
+18337296749086849848 137232
+18373382703664559418 136208
+18338563644317743416 137232
+18337267887996351288 16912400
+18338392679919071544 135184
+18338441075547943736 135184
+18373414342348191034 136208
+18337529838051733816 16912400
+18338656854700405560 135184
+18338652452308611384 16912400
+18337513333557768504 135184
+18337496017382355768 135184
+18338440250792292665 16912400
+18446517811396288569 16777232
+18338431420339398717 16779284
+18338431420339400761 16781328
+18338431420339396729 16777232
+18338432519851024953 16777232
+18338431420339398713 16779280
+18338431420339417145 16781328
+18338432519864525113 16908304
+18338431420352766521 16
+18338431420352901177 16912400
+18338431420352897081 16908304
+18338431420406637113 16908304
+18338431423761952825 16781328
+18338431423761948729 16777232
+18401436459543824384 2048
+18338432279332859961 16781328
+18338432279332855865 16777232
+18338656820223222329 16908304
+18338656837537642762 16783360
+141012904763222 0
+18410446137702166840 4112
+18410446141997134136 4112
+18410446137702166840 4112
+18410446137702166840 4112
+18410445042485506360 4112
+18410445042485506360 4112
+18410462631458713912 4112
+18338445723780199739 5136
+18410480516767887672 4112
+18410480516767887672 4112
+18410445038190539064 4112
+18410445038190539064 4112
+18410585775678894392 4112
+18410585775678894392 4112
+18437596136966455296 0
+18437596686722269184 0
+18410445038190539064 4112
+18410445038190539064 4112
+18410445038190539064 4112
+18437455399478099968 0
+18401426602459662356 526356
+18401426602459140136 4096
+18401426602459144272 16
+18401427706282574337 0
+18401444263634152464 3088
+18410469124063907872 4096
+18401427706283426048 524288
+18401428810106733056 524288
+18401444263648301056 528384
+18410469124075954176 524288
+18401428814317093376 0
+18401444267375464448 4096
+18410469127268343808 0
+18338444339701100596 528404
+18401445221411852288 4096
+18410469944402649088 0
+18401704787524583936 0
+18401698216325677056 524288
+141013038980950 0
+18410446137702166840 4112
+18410446141997134136 4112
+18410446137702166840 4112
+18410446137702166840 4112
+18410445042485506360 4112
+18410445042485506360 4112
+18410462631458713912 4112
+18410462631458713912 4112
+18410480516767887672 4112
+18410480516767887672 4112
+18410445038190539064 4112
+18410445038190539064 4112
+18410585775678894392 4112
+18410585775678894392 4112
+18437596136966455296 0
+18437596686722269184 0
+18410445038190539064 4112
+18410445038190539064 4112
+18410445038190539064 4112
+18437455399478099968 0
+18401426602593880084 134744084
+18401426602459140136 4096
+18401426602459144272 16
+18401427706282574337 0
+18401444263634152464 3088
+18410469124063907872 4096
+18401427706299154688 524288
+18401428810122461696 524288
+18401444263648759808 528384
+18410469124076412928 524288
+18401428810290561536 134217728
+18401444267258023936 134221824
+18410469127150903296 134217728
+18401436459543298048 134217728
+18401445221411852288 4096
+18410469944402649088 0
+18401704787524583936 0
+18401698216325152768 134217728
+1659000905558 2102292
+18410490114023961919 2102292
+18410490113889482043 2102288
+18410490664719037755 550831658000
+18410490113889484095 2104340
+18410490664719039807 550831660052
+18410490113889482043 2102288
+18410490113889482043 2102288
+18410490113889482043 2102288
+18410490113889482043 2102288
+18410490113889482043 2102288
+18410490113889482043 2102288
+18410498889539401010 1075844112
+18410490093513487674 1075844112
+18410499187007894843 2102288
+18410499187007894843 2102288
+18410490113889482043 2102288
+18410490113889482043 2102288
+18410630851377837371 2102288
+18410630851377837371 2102288
+18446658548884643897 2097168
+18446659098640457785 549757911056
+18410490113889482043 2102288
+18410490113889482043 2102288
+18409364192457406258 2102288
+18409364743286963510 550831660052
+18409364192524531058 2102288
+18409364194609102194 2104336
+18409373010075989810 2102288
+18409505222150798642 2104336
+4286080166821311794 1075844112
+18409373013465055026 1075846160
+18445467794099696946 1075844112
+18410639904300643634 1075844112
+18410490968588238130 549757918224
+18409369471089784626 549757916176
+18410504150027416882 549757916176
+18410499769064273714 549757916176
+18445464239770973490 550831658000
+18410714414379054898 2102288
+18409588528338580786 1075844112
+18409588769989343026 2102288
+18410498922850694451 2102288
+18437517213489573937 2101264
+18401488416470610485 2101268
+18401488416470610033 2101264
+18401489520294048305 2101264
+18410495615725369393 2103312
+18338438025312155698 2103312
+18401488416484044849 2101264
+18401488419909939249 1075843088
+18410495619164680241 1075843088
+18401491461602423345 549757915152
+18401489271169101873 549757915152
+18410496470423842865 549757915152
+18401706124084719921 2101264
+18401705028851216945 2101264
+18401707219284537393 2101264
+18410714418539278385 2101264
+1108169251650 0
+18410498922850694451 2102288
+18410498927145661747 2102288
+18410498922850694451 2102288
+18410498922850694451 2102288
+18410498927145661747 2102288
+18410498927145661747 2102288
+18410498889539401010 1075844112
+18410490093513487674 1075844112
+18410499217056019763 2102288
+18410499217056019763 2102288
+18410498922850694451 2102288
+18410498922850694451 2102288
+18410639660339049779 2102288
+18410639660339049779 2102288
+18437657950977929265 2101264
+18437658500733743153 549757915152
+18410498922850694451 2102288
+18410498922850694451 2102288
+18409364192457406258 2102288
+18409364192457407802 2104336
+18409364192524531058 2102288
+18409364743354072378 7184
+18409364211923189106 2104336
+18409364226947495730 2102288
+18409505222150798642 2104336
+18409364743300019514 2102288
+18409373010243829554 2104336
+18445467794099696946 1075844112
+18410639904048987442 1075846160
+18409378232906956082 549757918224
+18410499769064273714 549757916176
+18445464239770973490 550831658000
+18410705648354966834 2104336
+18409588528338580786 1075844112
+18409588769989343026 2102288
+18410498922850694451 2102288
+18437517213489573937 2101264
+18401488416470610485 2101268
+18401488416470609977 2101264
+18401488416470610033 2101264
+18401489520294048305 2101264
+18401492831764363829 2103316
+18401488416470612017 6160
+18410495615725369393 2103312
+18338438025324738610 2103312
+18401488416484044849 2101264
+18410495615738785841 2101264
+18401488419909939249 1075843088
+18410495618946576433 1075843088
+18401491461602423345 549757915152
+18401489271169101873 549757915152
+18410496470423842865 549757915152
+18401706124084719921 2101264
+18401705028851216945 2101264
+18401707219284537393 2101264
+18410714418539278385 2101264
+56130 0
+18410498922850694451 5136
+18410498927145661747 5136
+18410498922850694451 5136
+18410498922850694451 5136
+18410498927145661747 5136
+18410498927145661747 5136
+18410498889539401010 5136
+18410490110693356855 5140
+18410499217056019763 5136
+18410499217056019763 5136
+18410498922850694451 5136
+18410498922850694451 5136
+18410639660339049779 5136
+18410639660339049779 5136
+18437657950977929265 4112
+18437658500733743153 4112
+18410498922850694451 5136
+18410501113283492153 6160
+18337308823245699898 6160
+18337308825397377336 6160
+18337308823245715832 6160
+18337308831903283512 6160
+18337311041734736248 6160
+18337311030943629112 7184
+18337452051950156152 6160
+18337309374088706360 6160
+18337319851866405688 6160
+18373407992448695608 7184
+18338584535055382840 6160
+18337318474239064376 6160
+18338444374082763576 6160
+18373408844789988664 7184
+18338648045727234360 6160
+18337530925743749432 6160
+18337531201754381112 6160
+18410501113283492153 6160
+18437517213489573937 4112
+18401488416470610485 4116
+18401488416470609977 4112
+18401488416470610033 4112
+18401489520294048305 4112
+18401492831764363829 6164
+18401488416470628401 6160
+18401488416470626353 4112
+18338438025312155698 6160
+18401488416471461937 4112
+18410495615738785841 4112
+18401488419909939249 4112
+18410495619164680241 4112
+18401491461602423345 4112
+18401489271169101873 4112
+18410488773826131505 5136
+18410714388458190641 5136
+18410712193763587633 5136
+18410714384163223089 5136
+18410714384163223089 5136
+56130 0
+18410492317207838521 7184
+18410492321502805817 7184
+18410492317207838521 7184
+18410492317207838521 7184
+18410494520526061369 7184
+18410494520526061369 7184
+18410501114365622584 6160
+18338434741482175807 7188
+18410501407506120505 7184
+18410501407506120505 7184
+18410492317207838521 7184
+18410492317207838521 7184
+18410633054696193849 7184
+18410633054696193849 7184
+18446657419275220529 5136
+18446657969031034417 5136
+18410492317207838521 7184
+18410492317207838521 7184
+18337308823245699898 6160
+18337308825397377336 6160
+18337308823245715832 6160
+18337311030993435967 7188
+18374533906180225854 6164
+18337309382732839224 6160
+18337311041734736248 6160
+18337317640843705144 6160
+18373416793906036024 7184
+18337311039596476792 6160
+18337309374088706360 6160
+3998973522691177787 7184
+18373407989227486520 7184
+18338584535055382840 6160
+18338444374078536504 6160
+18373408844789988664 7184
+18337530937563887928 6160
+18337530925743749432 6160
+18337531201754381112 6160
+18410492317207838521 7184
+18446516681786865201 5136
+18410487884767903285 7188
+18410487884767901241 5136
+18410487884767901297 5136
+18410487889062868529 5136
+18410496715354879545 5136
+18410487884767919665 7184
+18410487884767917617 5136
+18410490092427490865 5136
+18410487884780877361 5136
+18410487884780877361 5136
+18410490092582549041 5136
+18410487885002782257 5136
+18410487888224007729 5136
+18401436459543824384 2048
+18410488773826131505 5136
+18410488773826131505 5136
+18410714388458190641 5136
+18410710003363952177 5136
+18410714384163223089 5136
+18410714384163223089 5136
+8444738 0
+18410492317207838521 7184
+18410492321502805817 7184
+18410492317207838521 7184
+18410492317207838521 7184
+18410494520526061369 7184
+18410494520526061369 7184
+18410501114365622584 6160
+18338434741482175807 7188
+18410501407506120505 7184
+18410501407506120505 7184
+18410492317207838521 7184
+18410492317207838521 7184
+18410633054696193849 7184
+18410633054696193849 7184
+18446657419275220529 5136
+18446657969031034417 5136
+18410492317207838521 7184
+18410492317207838521 7184
+18337308823245699898 6160
+18337308823245699384 6160
+18337308823254104440 6160
+18337311030993435967 7188
+18374533906180225854 6164
+18337309382732822840 6160
+18337311039587285368 6160
+18337317640835316536 6160
+18373416793897647416 7184
+18337452051954350392 6160
+18337309374080317880 6160
+3998973525912403259 7184
+18373407992448712120 7184
+18338584535055350072 6160
+18338444374082730808 6160
+18373408844789988664 7184
+18337530937563887928 6160
+18337530925743749432 6160
+18337531201754381112 6160
+18410492317207838521 7184
+18446516681786865201 5136
+18410487884767903285 7188
+18410487884767901241 5136
+18410487884767901297 5136
+18410487889062868529 5136
+18410496715354879545 5136
+18410487884767903281 7184
+18410487884767950385 5136
+18410490092419102257 5136
+18410487884772488753 5136
+18410487884772488753 5136
+18410490095803774513 5136
+18410487888224007729 5136
+18410487888224007729 5136
+18401436459543824384 2048
+18410488773826131505 5136
+18410488773826131505 5136
+18410714388458190641 5136
+18410710003363952177 5136
+18410714384163223089 5136
+18410714384163223089 5136
+8444738 0
+18410492317207967543 5140
+18410492321502934839 5140
+18410492317207967543 5140
+18410492317207967543 5140
+18410494520526190391 5140
+18410494520526190391 5140
+18410500014862512439 4116
+18338433624731564343 6164
+18410501407506249527 5140
+18410501407506249527 5140
+18410492317207967543 5140
+18410492317207967543 5140
+18410633054696322871 5140
+18410633054696322871 5140
+18446657419275220529 5136
+18446657969031034417 5136
+18410492317207967543 5140
+18410492317207967543 5140
+18337307723750978359 4116
+18337307723750979903 6164
+18337307723759382903 4116
+18337309931498583351 5140
+18374532806668598079 6164
+18337308832993917247 6164
+18337309942240047479 4116
+18337317640843703095 4116
+18373416793922813239 7188
+18337450952467888439 6164
+18337307724838039991 4116
+4575443089358272311 5140
+18373406890789729719 5140
+18338583433396402487 6164
+18338443274587779895 4116
+18373407745286878519 5140
+18337529838052389175 4116
+18337530925752398135 4116
+18337531201771025207 4116
+18410491230647957815 6164
+18446519993306921009 6160
+18410491196287957299 6160
+18410491196287957557 6164
+18410491196287958075 7184
+18410491196287957049 6160
+18410491196287957105 6160
+18410492295799585329 6160
+18410491196287957041 6160
+18410491196288006193 6160
+18410491213480934449 7184
+18410491196301326385 6160
+18410491196301326385 6160
+4575443054998535989 7188
+18410493396519172657 6160
+18410491197495916593 6160
+18410491197495916593 6160
+18401436459543824384 2048
+18410492072461285425 6160
+18410492072461285425 6160
+18410714414328527921 7184
+18410714397148395569 6160
+18410714397148395569 6160
+8444738 0
+18446521092818548785 6160
+18446521092818548785 6160
+18446521092818548785 6160
+18446521092818548785 6160
+18446522192330176561 6160
+18446522192330176561 6160
+18437481926278250496 0
+18446519981403551793 6160
+18446529083605202993 6160
+18446529083605202993 6160
+18446519993306921009 6160
+18446519993306921009 6160
+18446660730795276337 6160
+18446660730795276337 6160
+18446660730795276337 6160
+18410492312979979317 7188
+18446519993306921009 6160
+18446519993306921009 6160
+18436329499571258114 0
+18436329499571271720 6144
+18436329499571286096 4112
+18436479347391730716 5140
+18436348819747121208 2064
+18445374239666098288 4112
+18436339416717722368 0
+18445356533118994176 1024
+18436490390001367040 6144
+18445377004692795392 4096
+9223157872592369460 5140
+18436340528997403136 2048
+18446485752818570496 5120
+18436422103079605248 5120
+18446647801471346688 2048
+18437459788985338112 2048
+18436338282897478144 4096
+18437517999571505664 4096
+18445460803796083712 1024
+18437731437380912128 1024
+18445599724042064128 4096
+18445582373776269824 0
+18446519993306921009 6160
+18446519993306921009 6160
+2155928386 0
+18446521092818548785 6160
+18446521092818548785 6160
+18446521092818548785 6160
+18446521092818548785 6160
+18446522192330176561 6160
+18446522192330176561 6160
+18437481926278250496 0
+18446519981403551793 6160
+18446529083605202993 6160
+18446529083605202993 6160
+18446519993306921009 6160
+18446519993306921009 6160
+18446660730795276337 6160
+18446660730795276337 6160
+18446660730795276337 6160
+18446661280551090225 6160
+18446519993306921009 6160
+18446519993306921009 6160
+18436329499571258114 0
+18436329499571271720 6144
+18436329499571286096 4112
+18436479347391730716 5140
+18436348819747121208 2064
+18445374239666098288 4112
+18436339416717722368 0
+18445356533118994176 1024
+18436490390001367040 6144
+18445377004692795392 4096
+9223157872592369460 5140
+18436340528997403136 2048
+18446485752818570496 5120
+18436422103079605248 5120
+18446647801471346688 2048
+18437459788985338112 2048
+18436338282897478144 4096
+18437517999571505664 4096
+18445460803796083712 1024
+18437731437380912128 1024
+18445599724042064128 4096
+18445582373776269824 0
+18446519993306921009 6160
+18446519993306921009 6160
+PERFT: 3 6636
+VRAM USED (KB): 6848
+RAM USED (KB): 4040
