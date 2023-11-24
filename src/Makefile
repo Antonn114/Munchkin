@@ -2,7 +2,7 @@ CXX=g++
 CXXFLAGS=-Wall -Wextra -pedantic
 TARGET=munchkin
 
-SOURCES=main.cpp bitboard.cpp munchkin.cpp position.cpp bittricks.cpp
+SOURCES=main.cpp bitboard.cpp munchkin.cpp position.cpp bittricks.cpp movegen.cpp moveupd.cpp misc.cpp
 OBJECTS =$(SOURCES:.cpp=.o)
 DEPEND=$(OBJECTS:.o=.h)
 

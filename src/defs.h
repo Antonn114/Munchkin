@@ -7,4 +7,4 @@ typedef unsigned long long U64;
 typedef unsigned long U32;
 typedef unsigned char U8;
 
-#endif // !__MUNCHKIN_DEFS_H__
+#endif  // !__MUNCHKIN_DEFS_H__
