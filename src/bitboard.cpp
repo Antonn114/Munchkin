@@ -97,22 +97,22 @@ struct SMagic {
 SMagic bishop_magic[64];
 SMagic rook_magic[64];
 
-U64 get_rook_attacks(U64 occ, enumSquare sq) {
+U64 get_rook_attacks(U64 occ, U8 sq) {
   occ &= rook_magic[sq].mask;
   occ *= rook_magic[sq].magic;
   occ >>= 64 - RBits[sq];
   return rook_attacks_legal[sq][occ];
 }
 
-U64 get_bishop_attacks(U64 occ, enumSquare sq) {
+U64 get_bishop_attacks(U64 occ, U8 sq) {
   occ &= bishop_magic[sq].mask;
   occ *= bishop_magic[sq].magic;
   occ >>= 64 - BBits[sq];
   return bishop_attacks_legal[sq][occ];
 }
 
-U64 get_queen_attacks(U64 occ, enumSquare sq) {
-  return get_rook_attacks(occ, sq) | get_bishop_attacks(occ, sq);
+U64 get_queen_attacks(U64 occ, U8 sq) {
+  return (U64)get_rook_attacks(occ, sq) | (U64)get_bishop_attacks(occ, sq);
 }
 
 U64 bishop_good_masks_get(U64 blocker_mask, int sq) {
@@ -218,8 +218,8 @@ void init_magic() {
         bishop_attacks[i] & (UNIVERSE ^ (A_FILE | H_FILE | F_RANK | E_RANK));
     rook_magic[i].mask =
         rook_attacks[i] &
-        (UNIVERSE ^ (A_FILE * ((i & 7) != 0) | H_FILE * ((i & 7) != 7) |
-                     F_RANK * ((i >> 3) != 0) | E_RANK * ((i >> 3) != 8)));
+        (UNIVERSE ^ ((A_FILE * ((i & 7) != 0)) | (H_FILE * ((i & 7) != 7)) |
+                     (F_RANK * ((i >> 3) != 0)) | (E_RANK * ((i >> 3) != 7))));
   }
   init_bishop_legal_moves();
   init_rook_legal_moves();

@@ -51,9 +51,11 @@ struct Position {
   U8 halfmove_clock[5000];
   U8 captured_history_list[32];
   U8 captured_history_ptr;
-  U32 ply;
+  U32 ply = 0;
 };
 
 void parse_FEN(Position* pos, const std::string& fen);
+void print_board(Position* pos);
+void print_bitboard_all(Position* pos);
 
 #endif  // !__MUNCHKIN_POSITION_H__

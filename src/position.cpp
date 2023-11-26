@@ -1,6 +1,7 @@
 #include "position.h"
 
 #include "defs.h"
+#include "movegen.h"
 
 U8 board_to_bb(U8 c) {
   return (c == WHITE_PAWN_CH || c == BLACK_PAWN_CH) * mPawn |
@@ -93,4 +94,39 @@ void parse_FEN(Position* pos, const std::string& fen) {
   pos->halfmove_clock[pos->ply] =
       isspace(fen[c_i + 1]) ? fen[c_i] - '0'
                             : (fen[c_i] - '0') * 10 + fen[c_i + 1] - '0';
+  pos->ply++;
+  pos->halfmove_clock[pos->ply] = pos->halfmove_clock[pos->ply - 1] + 1;
+  pos->en_passant_sq[pos->ply] = pos->en_passant_sq[pos->ply - 1];
+  pos->castling_rights[pos->ply] = pos->castling_rights[pos->ply - 1];
+}
+
+void print_board(Position* pos) {
+  for (int i = 0; i < 64; i++) {
+    U8 r = i >> 3;
+    U8 c = i & 7;
+    if (!isalpha(pos->board[(7 - r) * 8 + c])) {
+      printf(".");
+    } else {
+      printf("%c", pos->board[(7 - r) * 8 + c]);
+    }
+    if ((i & 7) == 7) {
+      printf("\n");
+    }
+  }
+}
+
+void print_bitboard_all(Position* pos) {
+  printf("-- MASKS INFO --\n");
+  printf("M_WHITE: 0x%llx\n", (U64)pos->bb[mWhite]);
+  printf("M_BLACK: 0x%llx\n", (U64)pos->bb[mBlack]);
+  printf("M_PAWN: 0x%llx\n", (U64)pos->bb[mPawn]);
+  printf("M_KNIGHT: 0x%llx\n", (U64)pos->bb[mKnight]);
+  printf("M_BISHOP: 0x%llx\n", (U64)pos->bb[mBishop]);
+  printf("M_ROOK: 0x%llx\n", (U64)pos->bb[mRook]);
+  printf("M_QUEEN: 0x%llx\n", (U64)pos->bb[mQueen]);
+  printf("PINNED MASK: 0x%llx\n", (U64)pinned_mask);
+  printf("CAPTURE MASK: 0x%llx\n", (U64)capture_mask);
+  printf("PUSH MASK: 0x%llx\n", (U64)push_mask);
+  printf("KING DANGER: 0x%llx\n", (U64)king_danger_squares);
+  printf("ATK ON KING: 0x%llx\n", (U64)attacks_on_king);
 }

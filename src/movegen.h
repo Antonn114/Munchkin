@@ -20,6 +20,12 @@ typedef unsigned int Move;
 #define MOVEFLAG_PROMOTE_ROOK_CAPTURE 12
 #define MOVEFLAG_PROMOTE_QUEEN_CAPTURE 13
 
+extern U64 pinned_mask;
+extern U64 capture_mask;
+extern U64 push_mask;
+extern U64 king_danger_squares;
+extern U64 attacks_on_king;
+
 Move create_move(U8 from, U8 to, U8 flags);
 U8 move_get_flags(Move m);
 U8 move_get_to(Move m);

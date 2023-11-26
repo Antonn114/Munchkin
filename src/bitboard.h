@@ -96,9 +96,9 @@ void init_attack_masks();
 
 // MAGIC BITBOARD
 
-U64 get_rook_attacks(U64 occ, enumSquare sq);
-U64 get_bishop_attacks(U64 occ, enumSquare sq);
-U64 get_queen_attacks(U64 occ, enumSquare sq);
+U64 get_rook_attacks(U64 occ, U8 sq);
+U64 get_bishop_attacks(U64 occ, U8 sq);
+U64 get_queen_attacks(U64 occ, U8 sq);
 void init_magic();
 
 // OTHER PIECES ATTACK PATTERNS
