@@ -1,17 +1,9 @@
 #include "movegen.h"
 
+#include <string.h>
+
 #include "bitboard.h"
 #include "bittricks.h"
-
-U64 pinned_mask;
-U64 capture_mask;
-U64 push_mask;
-U64 king_danger_squares;
-U64 attacks_on_king;
-
-bool is_slider(Position* pos, int sq) {
-  return ((pos->bb[mRook] | pos->bb[mBishop] | pos->bb[mQueen]) >> sq) & 1;
-}
 
 Move create_move(U8 from, U8 to, U8 flags) {
   return ((flags & 0xf) << 12) | ((from & 0x3f) << 6) | (to & 0x3f);
@@ -43,7 +35,7 @@ void gen_rook_moves(Position* pos, int sq, Move move_list[], U8& move_ptr) {
       pos->bb[1 ^ pos->side_2_move] | pos->bb[pos->side_2_move], sq);
 
   good_mask &= ~pos->bb[pos->side_2_move];
-  good_mask &= capture_mask | push_mask;
+  good_mask &= pos->capture_mask | pos->push_mask;
   int next_sq;
   while (good_mask) {
     next_sq = bitScanForward(good_mask);
@@ -58,7 +50,7 @@ void gen_bishop_moves(Position* pos, int sq, Move* move_list, U8& move_ptr) {
   U64 good_mask = get_bishop_attacks(
       pos->bb[1 ^ pos->side_2_move] | pos->bb[pos->side_2_move], sq);
   good_mask &= ~pos->bb[pos->side_2_move];
-  good_mask &= capture_mask | push_mask;
+  good_mask &= pos->capture_mask | pos->push_mask;
   int next_sq;
   while (good_mask) {
     next_sq = bitScanForward(good_mask);
@@ -72,7 +64,7 @@ void gen_bishop_moves(Position* pos, int sq, Move* move_list, U8& move_ptr) {
 void gen_knight_moves(Position* pos, int sq, Move* move_list, U8& move_ptr) {
   U64 good_mask = knight_attacks[sq];
   good_mask &= ~pos->bb[pos->side_2_move];
-  good_mask &= capture_mask | push_mask;
+  good_mask &= pos->capture_mask | pos->push_mask;
   int next_sq;
   while (good_mask) {
     next_sq = bitScanForward(good_mask);
@@ -89,7 +81,7 @@ void gen_pawn_capture_moves(Position* pos, int sq, Move* move_list,
   U64 good_mask = pawn_attacks[pos->side_2_move][sq];
   good_mask &= ~pos->bb[pos->side_2_move];
   good_mask &= pos->bb[1 ^ pos->side_2_move];
-  good_mask &= capture_mask | push_mask;
+  good_mask &= pos->capture_mask | pos->push_mask;
   int next_sq;
   while (good_mask) {
     next_sq = bitScanForward(good_mask);
@@ -104,10 +96,11 @@ void gen_pawn_capture_moves(Position* pos, int sq, Move* move_list,
   if (pos->en_passant_sq[pos->ply] > 63) return;
   good_mask = pawn_attacks[pos->side_2_move][sq];
   good_mask &= (1ULL << pos->en_passant_sq[pos->ply]);
-  if ((attacks_on_king & (1ULL << (pos->en_passant_sq[pos->ply] +
-                                   (pos->side_2_move == mWhite ? -8 : 8))) &&
+  if ((pos->attacks_on_king[pos->side_2_move] &
+           (1ULL << (pos->en_passant_sq[pos->ply] +
+                     (pos->side_2_move == mWhite ? -8 : 8))) &&
        good_mask) ||
-      (!attacks_on_king && good_mask)) {
+      (!pos->attacks_on_king[pos->side_2_move] && good_mask)) {
     // checking that one position
     U64 company =
         (1ULL << sq) | (1ULL << (pos->en_passant_sq[pos->ply] +
@@ -134,7 +127,7 @@ void gen_pawn_push_moves(Position* pos, int sq, Move* move_list, U8& move_ptr) {
   good_mask &= ~pos->bb[pos->side_2_move];
   good_mask &= ~pos->bb[1 ^ pos->side_2_move];
   bool cant_push = (good_mask == 0);
-  good_mask &= push_mask;
+  good_mask &= pos->push_mask;
   if (good_mask) {
     if (((sq >> 3) == 6 && pos->side_2_move == mWhite) ||
         ((sq >> 3) == 1 && pos->side_2_move == mBlack)) {
@@ -155,7 +148,7 @@ void gen_pawn_push_moves(Position* pos, int sq, Move* move_list, U8& move_ptr) {
     return;
   good_mask &= ~pos->bb[pos->side_2_move];
   good_mask &= ~pos->bb[1 ^ pos->side_2_move];
-  good_mask &= push_mask;
+  good_mask &= pos->push_mask;
   if (good_mask) {
     move_list[move_ptr++] = create_move(
         sq, sq + (pos->side_2_move == mBlack ? -16 : 16), MOVEFLAG_PAWN_DPUSH);
@@ -171,7 +164,7 @@ void gen_king_moves(Position* pos, int sq, Move* move_list, U8& move_ptr) {
   // normal movement
   U64 good_mask = king_attacks[sq];
   good_mask &= ~pos->bb[pos->side_2_move];
-  good_mask &= ~king_danger_squares;
+  good_mask &= ~pos->king_danger_squares;
 
   int next_sq;
   while (good_mask) {
@@ -181,15 +174,15 @@ void gen_king_moves(Position* pos, int sq, Move* move_list, U8& move_ptr) {
         ((pos->bb[1 ^ pos->side_2_move] >> next_sq) & 1) * MOVEFLAG_CAPTURE);
     good_mask ^= (1ULL << next_sq);
   }
-  if (popCount(attacks_on_king) > 0) return;
+  if (pos->attacks_on_king[pos->side_2_move]) return;
   // castling : king
   if (((pos->side_2_move == mWhite &&
         (pos->castling_rights[pos->ply] & CASTLING_RIGHTS_WHITE_KING)) ||
        (pos->side_2_move == mBlack &&
         (pos->castling_rights[pos->ply] & CASTLING_RIGHTS_BLACK_KING))) &
           (pos->board[sq + 1] == 0 && pos->board[sq + 2] == 0) &&
-      ((king_danger_squares >> (sq + 1)) & 1) ^ 1 &&
-      ((king_danger_squares >> (sq + 2)) & 1) ^ 1) {
+      ((pos->king_danger_squares >> (sq + 1)) & 1) ^ 1 &&
+      ((pos->king_danger_squares >> (sq + 2)) & 1) ^ 1) {
     move_list[move_ptr++] = create_move(sq, sq + 2, MOVEFLAG_CASTLE_KING);
   }
   // castling : queen
@@ -199,22 +192,23 @@ void gen_king_moves(Position* pos, int sq, Move* move_list, U8& move_ptr) {
         (pos->castling_rights[pos->ply] & CASTLING_RIGHTS_BLACK_QUEEN))) &&
       (pos->board[sq - 1] == 0 && pos->board[sq - 2] == 0 &&
        pos->board[sq - 3] == 0) &&
-      ((king_danger_squares >> (sq - 1)) & 1) ^ 1 &&
-      ((king_danger_squares >> (sq - 2)) & 1) ^ 1) {
+      ((pos->king_danger_squares >> (sq - 1)) & 1) ^ 1 &&
+      ((pos->king_danger_squares >> (sq - 2)) & 1) ^ 1) {
     move_list[move_ptr++] = create_move(sq, sq - 2, MOVEFLAG_CASTLE_QUEEN);
   }
 }
 
 void gen_pinned_pieces_moves_diag(Position* pos, Move* move_list,
                                   U8& move_ptr) {
-  U64 m = pinned_mask & (pos->bb[mBishop] | pos->bb[mQueen] | pos->bb[mPawn]);
+  U64 m =
+      pos->pinned_mask & (pos->bb[mBishop] | pos->bb[mQueen] | pos->bb[mPawn]);
 
   U8 sq;
   while (m) {
     sq = bitScanForward(m);
     U64 good_mask = get_bishop_attacks(
         pos->bb[pos->side_2_move] | pos->bb[1 ^ pos->side_2_move], sq);
-    good_mask &= capture_mask | push_mask;
+    good_mask &= pos->capture_mask | pos->push_mask;
 
     if (((noea_attacks[sq] | sowe_attacks[sq]) >>
          pos->king_square[pos->side_2_move]) &
@@ -252,13 +246,14 @@ void gen_pinned_pieces_moves_diag(Position* pos, Move* move_list,
 
 void gen_pinned_pieces_moves_nondiag(Position* pos, Move* move_list,
                                      U8& move_ptr) {
-  U64 m = pinned_mask & (pos->bb[mRook] | pos->bb[mQueen] | pos->bb[mPawn]);
+  U64 m =
+      pos->pinned_mask & (pos->bb[mRook] | pos->bb[mQueen] | pos->bb[mPawn]);
   U8 sq;
   while (m) {
     sq = bitScanForward(m);
     U64 good_mask = get_rook_attacks(
         pos->bb[pos->side_2_move] | pos->bb[1 ^ pos->side_2_move], sq);
-    good_mask &= capture_mask | push_mask;
+    good_mask &= pos->capture_mask | pos->push_mask;
     if (((nort_attacks[sq] | sout_attacks[sq]) >>
          pos->king_square[pos->side_2_move]) &
         1) {
@@ -315,99 +310,13 @@ void gen_pinned_pieces_moves(Position* pos, Move* move_list, U8& move_ptr) {
   gen_pinned_pieces_moves_nondiag(pos, move_list, move_ptr);
 }
 
-void check_king_safety(Position* pos) {
-  U64 full_mask = pos->bb[mWhite] | pos->bb[mBlack];
-  U64 full_mask_noking =
-      full_mask ^ (1ULL << pos->king_square[pos->side_2_move]);
-  attacks_on_king = 0;
-  attacks_on_king |= knight_attacks[pos->king_square[pos->side_2_move]] &
-                     (pos->bb[1 ^ pos->side_2_move] & pos->bb[mKnight]);
-  attacks_on_king |=
-      get_rook_attacks(full_mask, pos->king_square[pos->side_2_move]) &
-      (pos->bb[1 ^ pos->side_2_move] & (pos->bb[mRook] | pos->bb[mQueen]));
-  attacks_on_king |=
-      get_bishop_attacks(full_mask, pos->king_square[pos->side_2_move]) &
-      (pos->bb[1 ^ pos->side_2_move] & (pos->bb[mBishop] | pos->bb[mQueen]));
-  attacks_on_king |= king_attacks[pos->king_square[pos->side_2_move]] &
-                     (pos->bb[1 ^ pos->side_2_move] & pos->bb[mKing]);
-  attacks_on_king |=
-      pawn_attacks[pos->side_2_move][pos->king_square[pos->side_2_move]] &
-      (pos->bb[1 ^ pos->side_2_move] & pos->bb[mPawn]);
-
-  capture_mask = UNIVERSE;
-  push_mask = UNIVERSE;
-
-  if (popCount(attacks_on_king) == 1) {
-    capture_mask = attacks_on_king;
-    int checker_sq = bitScanForward(attacks_on_king);
-    if (is_slider(pos, checker_sq)) {
-      push_mask = opponent_slider_to_king(checker_sq,
-                                          pos->king_square[pos->side_2_move]);
-    } else {
-      push_mask = 0;
-    }
-  }
-
-  king_danger_squares = 0;
-  U64 mask = pos->bb[1 ^ pos->side_2_move];
-  int sq = 0;
-  pinned_mask = 0;
-  while (mask) {
-    sq = bitScanForward(mask);
-    switch (pos->board[sq]) {
-      case 'r':
-      case 'R':
-        king_danger_squares |= get_rook_attacks(full_mask_noking, sq);
-        pinned_mask |=
-            ((get_rook_attacks(full_mask, sq) &
-              get_rook_attacks(full_mask, pos->king_square[pos->side_2_move])) &
-             opponent_slider_to_king(sq, pos->king_square[pos->side_2_move])) &
-            pos->bb[pos->side_2_move];
-        break;
-      case 'b':
-      case 'B':
-        king_danger_squares |= get_bishop_attacks(full_mask_noking, sq);
-        pinned_mask |=
-            ((get_bishop_attacks(full_mask, sq) &
-              get_bishop_attacks(full_mask,
-                                 pos->king_square[pos->side_2_move])) &
-             opponent_slider_to_king(sq, pos->king_square[pos->side_2_move])) &
-            pos->bb[pos->side_2_move];
-        break;
-      case 'q':
-      case 'Q':
-        king_danger_squares |= get_queen_attacks(full_mask_noking, sq);
-        pinned_mask |=
-            ((get_queen_attacks(full_mask, sq) &
-              get_queen_attacks(full_mask,
-                                pos->king_square[pos->side_2_move])) &
-             opponent_slider_to_king(sq, pos->king_square[pos->side_2_move])) &
-            pos->bb[pos->side_2_move];
-        break;
-      case 'p':
-      case 'P':
-        king_danger_squares |= pawn_attacks[1 ^ pos->side_2_move][sq];
-        break;
-      case 'n':
-      case 'N':
-        king_danger_squares |= knight_attacks[sq];
-        break;
-      case 'k':
-      case 'K':
-        king_danger_squares |= king_attacks[sq];
-        break;
-    };
-    mask ^= (1ULL << sq);
-  }
-}
-
 int gen_legal_moves(Position* pos, Move* move_list) {
   U8 move_ptr = 0;
   check_king_safety(pos);
   gen_king_moves(pos, pos->king_square[pos->side_2_move], move_list, move_ptr);
   gen_pinned_pieces_moves(pos, move_list, move_ptr);
-  if (popCount(attacks_on_king) < 2) {
-    U64 mask = pos->bb[pos->side_2_move] & (~pinned_mask);
+  if (popCount(pos->attacks_on_king[pos->side_2_move]) < 2) {
+    U64 mask = pos->bb[pos->side_2_move] & (~pos->pinned_mask);
     int sq = 0;
     while (mask) {
       sq = bitScanForward(mask);
@@ -438,4 +347,79 @@ int gen_legal_moves(Position* pos, Move* move_list) {
     }
   }
   return move_ptr;
+}
+
+Move parse_move(Position* pos, const char* s) {
+  assert(strlen(s) == 4 || strlen(s) == 5);
+  assert(isalpha(s[0]) && isdigit(s[1]) && isalpha(s[2]) && isdigit(s[3]));
+  U8 from = (s[0] - 'a') + (s[1] - '1') * 8;
+  U8 to = (s[2] - 'a') + (s[3] - '1') * 8;
+  if (board_to_bb(pos->board[from]) == mPawn) {
+    if (to - from == 16 || from - to == 16)
+      return create_move(from, to, MOVEFLAG_PAWN_DPUSH);
+    if (to == pos->en_passant_sq[pos->ply])
+      return create_move(from, to, MOVEFLAG_CAPTURE_EP);
+    if (pos->side_2_move == mWhite && (to >> 3) == 7) {
+      assert(strlen(s) == 5 && isalpha(s[4]));
+      if (pos->board[to]) {
+        if (s[4] == 'q')
+          return create_move(from, to, MOVEFLAG_PROMOTE_QUEEN_CAPTURE);
+        else if (s[4] == 'r')
+          return create_move(from, to, MOVEFLAG_PROMOTE_ROOK_CAPTURE);
+        else if (s[4] == 'b')
+          return create_move(from, to, MOVEFLAG_PROMOTE_BISHOP_CAPTURE);
+        else if (s[4] == 'n')
+          return create_move(from, to, MOVEFLAG_PROMOTE_KNIGHT_CAPTURE);
+      } else {
+        if (s[4] == 'q')
+          return create_move(from, to, MOVEFLAG_PROMOTE_QUEEN);
+        else if (s[4] == 'r')
+          return create_move(from, to, MOVEFLAG_PROMOTE_ROOK);
+        else if (s[4] == 'b')
+          return create_move(from, to, MOVEFLAG_PROMOTE_BISHOP);
+        else if (s[4] == 'n')
+          return create_move(from, to, MOVEFLAG_PROMOTE_KNIGHT);
+      }
+    }
+  }
+  if (board_to_bb(pos->board[from]) == mKing) {
+    if (to == from + 2) return create_move(from, to, MOVEFLAG_CASTLE_KING);
+    if (to == from - 2) return create_move(from, to, MOVEFLAG_CASTLE_QUEEN);
+  }
+  if (pos->board[to]) {
+    return create_move(from, to, MOVEFLAG_CAPTURE);
+  }
+  return create_move(from, to, MOVEFLAG_QUIET);
+}
+
+char* move_as_str(Move m) {
+  char* s;
+  if (move_get_flags(m) >= MOVEFLAG_PROMOTE_KNIGHT) {
+    s = (char*)malloc(5 * sizeof(char));
+  } else {
+    s = (char*)malloc(4 * sizeof(char));
+  }
+  s[0] = 'a' + (move_get_from(m) & 7);
+  s[1] = '1' + (move_get_from(m) >> 3);
+  s[2] = 'a' + (move_get_to(m) & 7);
+  s[3] = '1' + (move_get_to(m) >> 3);
+  switch (move_get_flags(m)) {
+    case MOVEFLAG_PROMOTE_QUEEN:
+    case MOVEFLAG_PROMOTE_QUEEN_CAPTURE:
+      s[4] = 'q';
+      break;
+    case MOVEFLAG_PROMOTE_ROOK:
+    case MOVEFLAG_PROMOTE_ROOK_CAPTURE:
+      s[4] = 'r';
+      break;
+    case MOVEFLAG_PROMOTE_BISHOP:
+    case MOVEFLAG_PROMOTE_BISHOP_CAPTURE:
+      s[4] = 'b';
+      break;
+    case MOVEFLAG_PROMOTE_KNIGHT:
+    case MOVEFLAG_PROMOTE_KNIGHT_CAPTURE:
+      s[4] = 'n';
+      break;
+  }
+  return s;
 }

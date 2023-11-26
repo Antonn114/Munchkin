@@ -1,7 +1,11 @@
 #include "position.h"
 
+#include "bittricks.h"
 #include "defs.h"
-#include "movegen.h"
+
+bool is_slider(Position* pos, int sq) {
+  return ((pos->bb[mRook] | pos->bb[mBishop] | pos->bb[mQueen]) >> sq) & 1;
+}
 
 U8 board_to_bb(U8 c) {
   return (c == WHITE_PAWN_CH || c == BLACK_PAWN_CH) * mPawn |
@@ -21,6 +25,94 @@ U8 bb_to_board(U8 c, U8 p) {
     return (p == mPawn) * BLACK_PAWN_CH | (p == mKnight) * BLACK_KNIGHT_CH |
            (p == mBishop) * WHITE_BISHOP_CH | (p == mRook) * WHITE_ROOK_CH |
            (p == mQueen) * WHITE_QUEEN_CH | (p == mKing) * WHITE_KING_CH;
+  }
+}
+
+void check_king_safety(Position* pos) {
+  U64 full_mask = pos->bb[mWhite] | pos->bb[mBlack];
+  U64 full_mask_noking =
+      full_mask ^ (1ULL << pos->king_square[pos->side_2_move]);
+  pos->attacks_on_king[mBlack] = pos->attacks_on_king[mWhite] = 0;
+  for (int i = 0; i < 2; i++) {
+    pos->attacks_on_king[i] |= knight_attacks[pos->king_square[i]] &
+                               (pos->bb[1 ^ i] & pos->bb[mKnight]);
+    pos->attacks_on_king[i] |=
+        get_rook_attacks(full_mask, pos->king_square[i]) &
+        (pos->bb[1 ^ i] & (pos->bb[mRook] | pos->bb[mQueen]));
+    pos->attacks_on_king[i] |=
+        get_bishop_attacks(full_mask, pos->king_square[i]) &
+        (pos->bb[1 ^ i] & (pos->bb[mBishop] | pos->bb[mQueen]));
+    pos->attacks_on_king[i] |=
+        king_attacks[pos->king_square[i]] & (pos->bb[1 ^ i] & pos->bb[mKing]);
+    pos->attacks_on_king[i] |=
+        pawn_attacks[pos->side_2_move][pos->king_square[i]] &
+        (pos->bb[1 ^ i] & pos->bb[mPawn]);
+  }
+
+  pos->capture_mask = UNIVERSE;
+  pos->push_mask = UNIVERSE;
+
+  if (popCount(pos->attacks_on_king[pos->side_2_move]) == 1) {
+    pos->capture_mask = pos->attacks_on_king[pos->side_2_move];
+    int checker_sq = bitScanForward(pos->attacks_on_king[pos->side_2_move]);
+    if (is_slider(pos, checker_sq)) {
+      pos->push_mask = opponent_slider_to_king(
+          checker_sq, pos->king_square[pos->side_2_move]);
+    } else {
+      pos->push_mask = 0;
+    }
+  }
+
+  pos->king_danger_squares = 0;
+  U64 mask = pos->bb[1 ^ pos->side_2_move];
+  int sq = 0;
+  pos->pinned_mask = 0;
+  while (mask) {
+    sq = bitScanForward(mask);
+    switch (pos->board[sq]) {
+      case 'r':
+      case 'R':
+        pos->king_danger_squares |= get_rook_attacks(full_mask_noking, sq);
+        pos->pinned_mask |=
+            ((get_rook_attacks(full_mask, sq) &
+              get_rook_attacks(full_mask, pos->king_square[pos->side_2_move])) &
+             opponent_slider_to_king(sq, pos->king_square[pos->side_2_move])) &
+            pos->bb[pos->side_2_move];
+        break;
+      case 'b':
+      case 'B':
+        pos->king_danger_squares |= get_bishop_attacks(full_mask_noking, sq);
+        pos->pinned_mask |=
+            ((get_bishop_attacks(full_mask, sq) &
+              get_bishop_attacks(full_mask,
+                                 pos->king_square[pos->side_2_move])) &
+             opponent_slider_to_king(sq, pos->king_square[pos->side_2_move])) &
+            pos->bb[pos->side_2_move];
+        break;
+      case 'q':
+      case 'Q':
+        pos->king_danger_squares |= get_queen_attacks(full_mask_noking, sq);
+        pos->pinned_mask |=
+            ((get_queen_attacks(full_mask, sq) &
+              get_queen_attacks(full_mask,
+                                pos->king_square[pos->side_2_move])) &
+             opponent_slider_to_king(sq, pos->king_square[pos->side_2_move])) &
+            pos->bb[pos->side_2_move];
+        break;
+      case 'p':
+      case 'P':
+        pos->king_danger_squares |= pawn_attacks[1 ^ pos->side_2_move][sq];
+        break;
+      case 'n':
+      case 'N':
+        pos->king_danger_squares |= knight_attacks[sq];
+        break;
+      case 'k':
+      case 'K':
+        pos->king_danger_squares |= king_attacks[sq];
+        break;
+    };
+    mask ^= (1ULL << sq);
   }
 }
 
@@ -124,9 +216,10 @@ void print_bitboard_all(Position* pos) {
   printf("M_BISHOP: 0x%llx\n", (U64)pos->bb[mBishop]);
   printf("M_ROOK: 0x%llx\n", (U64)pos->bb[mRook]);
   printf("M_QUEEN: 0x%llx\n", (U64)pos->bb[mQueen]);
-  printf("PINNED MASK: 0x%llx\n", (U64)pinned_mask);
-  printf("CAPTURE MASK: 0x%llx\n", (U64)capture_mask);
-  printf("PUSH MASK: 0x%llx\n", (U64)push_mask);
-  printf("KING DANGER: 0x%llx\n", (U64)king_danger_squares);
-  printf("ATK ON KING: 0x%llx\n", (U64)attacks_on_king);
+  printf("PINNED MASK: 0x%llx\n", (U64)pos->pinned_mask);
+  printf("CAPTURE MASK: 0x%llx\n", (U64)pos->capture_mask);
+  printf("PUSH MASK: 0x%llx\n", (U64)pos->push_mask);
+  printf("KING DANGER: 0x%llx\n", (U64)pos->king_danger_squares);
+  printf("ATK ON W KING: 0x%llx\n", (U64)pos->attacks_on_king[mWhite]);
+  printf("ATK ON B KING: 0x%llx\n", (U64)pos->attacks_on_king[mBlack]);
 }

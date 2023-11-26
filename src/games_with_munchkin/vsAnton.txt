@@ -1,0 +1,11 @@
+First game with random moves:
+
+(bot as black)
+
+1. e4 Nh6 2. d4 e6 3. Nf3 c6 4. Bc4 Ba3 5. Nxa3 Qa5+ 6. c3 f5 7. exf5 Ng8 8. fxe6 Ne7 9. exd7+ Kxd7 10. Ne5+ Qxe5+ 11. dxe5+ Ke8 12. e6 Nd5 13. Bxd5 Bxe6 14. Bxe6 c5 15. Qf3 b5 16. Qf7+ Kd8 17. Bg5# 1-0
+
+First game with minimax and alpha beta pruning, simple eval function regarding piece material:
+
+(bot as black)
+
+1. e4 a5 2. d4 e6 3. Nf3 b6 4. Nc3 Bb4 5. Bd2 Kf8 6. a3 Bxc3 7. Bxc3 Bb7 8. Bd3 Ke8 9. O-O Kf8 10. Nh4 Qxh4 11. b4 axb4 12. Bxb4+ c5 13. dxc5 bxc5 14. Bxc5+ Ne7 15. c4 Qh6 16. Qb3 Ba6 17. Qb4 Kg8 18. Bxe7 Nc6 19. Qd6 Bb7 20. Qxd7 Na5 21. Bd8 Bc6 22. Qe7 Nb7 23. Bb6 Qh5 24. Rfb1 Qg6 25. f3 e5 26. Qxe5 Qd6 27. Qc3 Ba4 28. Bd4 Nd8 29. Bxg7 Bc2 30. Bxc2 Rxa3 31. Qb2 Rxf3 32. gxf3 f6 33. Bxf6 Qc5+ 34. Kg2 Kf8 35. Bxh8 Qg5+ 36. Kh3 Ke8 37. Qe5+ Qxe5 38. Bxe5 Ne6 39. Ra7 Ng5+ 40. Kg4 Ne6 41. Rb8+ Nd8 42. Ba4+ Kf8 43. Rxd8#
