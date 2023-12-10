@@ -1,0 +1,33 @@
+[Event "?"]
+[Site "?"]
+[Date "2023.11.27"]
+[Round "?"]
+[White "munchkin"]
+[Black "blackmarlin"]
+[Result "0-1"]
+[ECO "A00"]
+[GameDuration "00:04:03"]
+[GameEndTime "2023-11-27T23:57:47.090 +07"]
+[GameStartTime "2023-11-27T23:53:43.220 +07"]
+[Opening "Van't Kruijs Opening"]
+[PlyCount "50"]
+[Termination "abandoned"]
+[TimeControl "40/300"]
+
+1. e3 {0.54s} Nf6 {-0.18/25 7.7s} 2. Qf3 {1.5s} d5 {+1.02/27 19s} 3. Nc3 {5.4s}
+e5 {+1.27/24 7.6s} 4. Bd3 {7.4s} e4 {+3.31/26 6.4s} 5. Bb5+ {2.6s}
+c6 {+4.70/25 4.6s} 6. Qf4 {2.3s} Bd6 {+5.01/27 6.8s} 7. Qg5 {6.0s}
+h6 {+6.80/24 4.1s} 8. Qxg7 {13s} Rh7 {+6.89/24 6.0s} 9. Qxh7 {7.9s}
+Nxh7 {+7.06/24 6.9s} 10. Ba4 {1.8s} Qg5 {+8.11/22 6.8s} 11. Kf1 {1.6s}
+b5 {+8.61/23 12s} 12. Bb3 {1.9s} a5 {+8.64/22 4.2s} 13. Nge2 {4.5s}
+b4 {+9.53/21 5.1s} 14. h4 {2.6s} Qf5 {+9.68/22 6.4s} 15. Nd4 {3.2s}
+Qh5 {+10.46/22 7.8s} 16. Nce2 {1.4s} a4 {+10.68/23 4.7s} 17. Bxa4 {1.5s}
+Rxa4 {+10.84/23 5.5s} 18. Nb5 {2.8s} cxb5 {+13.26/22 3.9s} 19. a3 {1.6s}
+bxa3 {+15.23/20 4.1s} 20. bxa3 {1.8s} b4 {+15.97/23 7.7s} 21. Rb1 {1.9s}
+Ba6 {+20.01/22 5.6s} 22. d3 {0.56s} exd3 {+20.10/22 5.4s} 23. cxd3
+Bxd3 {+20.73/21 4.8s} 24. Rb2 bxa3 {+23.10/22 10.0s} 25. Rd2 {0.58s}
+a2 {+24.72/21 5.1s, White disconnects} 0-1
+
+
+position startpos moves e2e3 e7e6 d1h5 b8c6 f1d3 c6b4 d3e4 g8f6 h5h4 g7g5 h4h3 f6e4 b1a3 d8f6 g1f3 h7h5 g2g4 b4d5 a3b5 c7c6 b5d4 c6c5 d4b5 a7a6 b5a3 h8g8 g4h5 g5g4 h3f1 f6f3 h1g1 f3f6 f1g2 e4g5 e1f1 g5h3 g1h1 h3f2 g2f2 g4g3
+1n2k3/5p1n/3b3p/3p3q/r6P/3bP3/p2RNPP1/2B2K1R w - - 0 26

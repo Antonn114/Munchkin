@@ -34,6 +34,6 @@ void gen_pinned_pieces_moves(Position *pos, Move *move_list, U8 &move_ptr);
 int gen_legal_moves(Position *pos, Move *move_list);
 
 Move parse_move(Position *pos, const char *s);
-char *move_as_str(Move m);
+std::string move_as_str(Move m);
 
 #endif  // !__MUNCHKIN_MOVEGEN_H__

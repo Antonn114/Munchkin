@@ -1,7 +1,12 @@
 #include "position.h"
 
+#include <iostream>
+#include <sstream>
+
+#include "bitboard.h"
 #include "bittricks.h"
 #include "defs.h"
+#include "evaluation.h"
 
 bool is_slider(Position* pos, int sq) {
   return ((pos->bb[mRook] | pos->bb[mBishop] | pos->bb[mQueen]) >> sq) & 1;
@@ -116,76 +121,75 @@ void check_king_safety(Position* pos) {
   }
 }
 
-void parse_FEN(Position* pos, const std::string& fen) {
-  U8 board_ptr = 56;
-  pos->ply = 0;
+void parse_FEN_board(Position* pos, const std::string& fen) {
+  int cnt = 0;
   for (U8 i = 0; i < 64; i++) {
     pos->board[i] = 0;
   }
   for (U8 i = 0; i < 8; i++) {
     pos->bb[i] = 0;
+    pos->pst_score[i] = pos->pst_score[i + 8] = 0;
   }
-  int c_i = 0;
-  int cnt = 0;
-  for (; c_i < (int)fen.length() && cnt < 64; c_i++) {
-    if (isspace(fen[c_i]))
-      continue;
-    else if (isdigit(fen[c_i])) {
-      board_ptr += fen[c_i] - '0';
+  for (int c_i = 0; c_i < (int)fen.length() && cnt < 64; c_i++) {
+    if (isdigit(fen[c_i])) {
       cnt += fen[c_i] - '0';
     } else if (fen[c_i] == '/') {
-      board_ptr -= 16;
     } else {
-      if (fen[c_i] == 'k') pos->king_square[mBlack] = board_ptr;
-      if (fen[c_i] == 'K') pos->king_square[mWhite] = board_ptr;
-      pos->board[board_ptr] = fen[c_i];
-      pos->bb[islower(fen[c_i]) ? mBlack : mWhite] |= (1ULL << board_ptr);
-      pos->bb[board_to_bb(fen[c_i])] |= (1ULL << board_ptr);
-      board_ptr++;
+      int sq = flipped_square(cnt);
+      if (fen[c_i] == 'k') pos->king_square[mBlack] = sq;
+      if (fen[c_i] == 'K') pos->king_square[mWhite] = sq;
+      pos->board[sq] = fen[c_i];
+      bool is_black = islower(fen[c_i]);
+      pos->bb[is_black ? mBlack : mWhite] |= 1ULL << sq;
+      int pst_lookup = is_black ? sq : cnt;
+      int piece = board_to_bb(fen[c_i]);
+      if (piece != mKing)
+        pos->pst_score[piece + is_black * 8] +=
+            piece_square_table[piece][pst_lookup];
+      else
+        pos->pst_score[piece + is_black * 8] +=
+            is_endgame(pos) ? pst_King_Black_endgame[pst_lookup]
+                            : pst_King_Black_middlegame[pst_lookup];
+      pos->bb[board_to_bb(fen[c_i])] |= 1ULL << sq;
       cnt++;
     }
   }
-  while (isspace(fen[c_i])) {
-    c_i++;
-  }
-  pos->side_2_move = (fen[c_i] == 'w' ? mWhite : mBlack);
-  c_i++;
-  while (isspace(fen[c_i])) {
-    c_i++;
-  }
-  pos->castling_rights[pos->ply] = 0;
-  if (fen[c_i] == '-')
-    c_i++;
-  else {
-    while (!isspace(fen[c_i])) {
-      if (fen[c_i] == 'K')
+}
+
+void parse_FEN(Position* pos, const std::string& fen) {
+  std::istringstream iss(fen);
+  pos->ply = 0;
+  std::string foo;
+  iss >> foo;
+  parse_FEN_board(pos, foo);
+  iss >> foo;
+  pos->side_2_move = (foo[0] == 'w' ? mWhite : mBlack);
+  iss >> foo;
+  if (foo[0] == '-') {
+    pos->castling_rights[pos->ply] = 0;
+  } else {
+    for (char& c : foo) {
+      if (c == 'K')
         pos->castling_rights[pos->ply] |= CASTLING_RIGHTS_WHITE_KING;
-      else if (fen[c_i] == 'k')
+      else if (c == 'k')
         pos->castling_rights[pos->ply] |= CASTLING_RIGHTS_BLACK_KING;
-      else if (fen[c_i] == 'Q')
+      else if (c == 'Q')
         pos->castling_rights[pos->ply] |= CASTLING_RIGHTS_WHITE_QUEEN;
-      else if (fen[c_i] == 'q')
+      else if (c == 'q')
         pos->castling_rights[pos->ply] |= CASTLING_RIGHTS_BLACK_QUEEN;
-      c_i++;
     }
-    c_i++;
   }
-  while (isspace(fen[c_i])) {
-    c_i++;
+  iss >> foo;
+  if (foo[0] == '-') {
+    pos->en_passant_sq[pos->ply] = 0;
+
+  } else {
+    pos->en_passant_sq[pos->ply] = (foo[0] - 'a') * 8 + foo[0 + 1] - '0';
   }
-  pos->en_passant_sq[pos->ply] = 0;
-  if (fen[c_i] == '-')
-    c_i++;
-  else {
-    pos->en_passant_sq[pos->ply] = (fen[c_i] - 'a') * 8 + fen[c_i + 1] - '0';
-    c_i += 2;
-  }
-  while (isspace(fen[c_i])) {
-    c_i++;
-  }
-  pos->halfmove_clock[pos->ply] =
-      isspace(fen[c_i + 1]) ? fen[c_i] - '0'
-                            : (fen[c_i] - '0') * 10 + fen[c_i + 1] - '0';
+  iss >> foo;
+  pos->halfmove_clock[pos->ply] = stoi(foo);
+  iss >> foo;
+  pos->fullmove = stoi(foo);
   pos->ply++;
   pos->halfmove_clock[pos->ply] = pos->halfmove_clock[pos->ply - 1] + 1;
   pos->en_passant_sq[pos->ply] = pos->en_passant_sq[pos->ply - 1];
@@ -222,4 +226,20 @@ void print_bitboard_all(Position* pos) {
   printf("KING DANGER: 0x%llx\n", (U64)pos->king_danger_squares);
   printf("ATK ON W KING: 0x%llx\n", (U64)pos->attacks_on_king[mWhite]);
   printf("ATK ON B KING: 0x%llx\n", (U64)pos->attacks_on_king[mBlack]);
+}
+
+bool is_opening(Position* pos) { return !is_middle(pos) && !is_endgame(pos); }
+bool is_middle(Position* pos) {
+  return std::max(
+             popCount((pos->bb[mKnight] | pos->bb[mBishop]) & pos->bb[mWhite]),
+             popCount((pos->bb[mKnight] | pos->bb[mBishop]) &
+                      pos->bb[mBlack])) <= 3;
+}
+bool is_endgame(Position* pos) {
+  return std::max(popCount((pos->bb[mKnight] | pos->bb[mBishop] |
+                            pos->bb[mRook] | pos->bb[mQueen]) &
+                           pos->bb[mWhite]),
+                  popCount((pos->bb[mKnight] | pos->bb[mBishop] |
+                            pos->bb[mRook] | pos->bb[mQueen]) &
+                           pos->bb[mBlack])) <= 3;
 }

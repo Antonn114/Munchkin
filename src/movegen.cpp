@@ -4,6 +4,7 @@
 
 #include "bitboard.h"
 #include "bittricks.h"
+#include "position.h"
 
 Move create_move(U8 from, U8 to, U8 flags) {
   return ((flags & 0xf) << 12) | ((from & 0x3f) << 6) | (to & 0x3f);
@@ -180,7 +181,8 @@ void gen_king_moves(Position* pos, int sq, Move* move_list, U8& move_ptr) {
         (pos->castling_rights[pos->ply] & CASTLING_RIGHTS_WHITE_KING)) ||
        (pos->side_2_move == mBlack &&
         (pos->castling_rights[pos->ply] & CASTLING_RIGHTS_BLACK_KING))) &
-          (pos->board[sq + 1] == 0 && pos->board[sq + 2] == 0) &&
+          (pos->board[sq + 1] == 0 && pos->board[sq + 2] == 0 &&
+           board_to_bb(pos->board[sq + 3]) == mRook) &&
       ((pos->king_danger_squares >> (sq + 1)) & 1) ^ 1 &&
       ((pos->king_danger_squares >> (sq + 2)) & 1) ^ 1) {
     move_list[move_ptr++] = create_move(sq, sq + 2, MOVEFLAG_CASTLE_KING);
@@ -192,6 +194,7 @@ void gen_king_moves(Position* pos, int sq, Move* move_list, U8& move_ptr) {
         (pos->castling_rights[pos->ply] & CASTLING_RIGHTS_BLACK_QUEEN))) &&
       (pos->board[sq - 1] == 0 && pos->board[sq - 2] == 0 &&
        pos->board[sq - 3] == 0) &&
+      board_to_bb(pos->board[sq - 4]) == mRook &&
       ((pos->king_danger_squares >> (sq - 1)) & 1) ^ 1 &&
       ((pos->king_danger_squares >> (sq - 2)) & 1) ^ 1) {
     move_list[move_ptr++] = create_move(sq, sq - 2, MOVEFLAG_CASTLE_QUEEN);
@@ -392,33 +395,28 @@ Move parse_move(Position* pos, const char* s) {
   return create_move(from, to, MOVEFLAG_QUIET);
 }
 
-char* move_as_str(Move m) {
-  char* s;
-  if (move_get_flags(m) >= MOVEFLAG_PROMOTE_KNIGHT) {
-    s = (char*)malloc(5 * sizeof(char));
-  } else {
-    s = (char*)malloc(4 * sizeof(char));
-  }
-  s[0] = 'a' + (move_get_from(m) & 7);
-  s[1] = '1' + (move_get_from(m) >> 3);
-  s[2] = 'a' + (move_get_to(m) & 7);
-  s[3] = '1' + (move_get_to(m) >> 3);
+std::string move_as_str(Move m) {
+  std::string s;
+  s += 'a' + (move_get_from(m) & 7);
+  s += '1' + (move_get_from(m) >> 3);
+  s += 'a' + (move_get_to(m) & 7);
+  s += '1' + (move_get_to(m) >> 3);
   switch (move_get_flags(m)) {
     case MOVEFLAG_PROMOTE_QUEEN:
     case MOVEFLAG_PROMOTE_QUEEN_CAPTURE:
-      s[4] = 'q';
+      s += 'q';
       break;
     case MOVEFLAG_PROMOTE_ROOK:
     case MOVEFLAG_PROMOTE_ROOK_CAPTURE:
-      s[4] = 'r';
+      s += 'r';
       break;
     case MOVEFLAG_PROMOTE_BISHOP:
     case MOVEFLAG_PROMOTE_BISHOP_CAPTURE:
-      s[4] = 'b';
+      s += 'b';
       break;
     case MOVEFLAG_PROMOTE_KNIGHT:
     case MOVEFLAG_PROMOTE_KNIGHT_CAPTURE:
-      s[4] = 'n';
+      s += 'n';
       break;
   }
   return s;

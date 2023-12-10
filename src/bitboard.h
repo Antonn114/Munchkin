@@ -6,7 +6,7 @@
 #include "defs.h"
 
 enum enumSquare {
-  a1,
+  a1 = 0,
   b1,
   c1,
   d1,
@@ -107,6 +107,8 @@ extern U64 knight_attacks[64], king_attacks[64], pawn_attacks[2][64];
 void init_other_attacks();
 
 U64 opponent_slider_to_king(int Esq, int Ksq);
+
+inline U8 flipped_square(U8 sq) { return ((7 - (sq >> 3)) << 3) | (sq & 7); }
 
 // Garbo
 

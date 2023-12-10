@@ -45,15 +45,22 @@ struct Position {
   U8 king_square[2];
   U8 side_2_move;
 
-  U8 castling_rights[5000];
-  U8 en_passant_sq[5000];
-  U8 halfmove_clock[5000];
+  U8 castling_rights[64];
+  U8 en_passant_sq[64];
+  U8 halfmove_clock[64];
+  U8 fullmove;
 
   U64 pinned_mask;
   U64 capture_mask;
   U64 push_mask;
   U64 king_danger_squares;
   U64 attacks_on_king[2];
+
+  int max_same_piece_in_row[64];
+  int same_piece_in_row[64];
+  U8 piece_in_row[64];
+
+  int pst_score[16];
 
   U8 captured_history_list[32];
   U8 captured_history_ptr;
@@ -67,5 +74,9 @@ void print_bitboard_all(Position* pos);
 void check_king_safety(Position* pos);
 
 bool is_slider(Position* pos, int sq);
+
+bool is_opening(Position* pos);
+bool is_middle(Position* pos);
+bool is_endgame(Position* pos);
 
 #endif  // !__MUNCHKIN_POSITION_H__

@@ -1,0 +1,5 @@
+position startpos
+go perft 4
+go perft 5
+go perft 6
+quit

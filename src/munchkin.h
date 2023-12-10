@@ -9,7 +9,7 @@
 #include "position.h"
 #include "search.h"
 #include "testing.h"
-
+#include "uci.h"
 void munchkin_init();
 
 #endif  // !__MUNCHKIN_H__

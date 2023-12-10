@@ -1,308 +1,266 @@
 #include "moveupd.h"
 
+#include <assert.h>
+
+#include <iostream>
+
+#include "bitboard.h"
+#include "evaluation.h"
 #include "position.h"
+
+void remove_piece(Position* pos, U8 piece, U8 col, U8 sq) {
+  assert((pos->bb[col] >> sq) & 1);
+  assert((pos->bb[piece] >> sq) & 1);
+  pos->board[sq] = 0;
+  pos->bb[col] ^= (1ULL << sq);
+  pos->bb[piece] ^= (1ULL << sq);
+  if (piece != mKing) {
+    pos->pst_score[piece + col * 8] -=
+        piece_square_table[piece][col == mBlack ? flipped_square(sq) : sq];
+  } else {
+    pos->pst_score[piece + col * 8] -=
+        (is_endgame(pos)
+             ? (pst_King_Black_endgame[col == mBlack ? flipped_square(sq) : sq])
+             : pst_King_Black_middlegame[col == mBlack ? flipped_square(sq)
+                                                       : sq]);
+    if (col == mWhite) {
+      pos->castling_rights[pos->ply] &=
+          CASTLING_RIGHTS_BLACK_KING | CASTLING_RIGHTS_BLACK_QUEEN;
+    } else
+      pos->castling_rights[pos->ply] &=
+          CASTLING_RIGHTS_WHITE_KING | CASTLING_RIGHTS_WHITE_QUEEN;
+  }
+  if (piece == mRook) {
+    if (sq == a1 && col == mWhite)
+      pos->castling_rights[pos->ply] &=
+          (CASTLING_RIGHTS_WHITE_KING | CASTLING_RIGHTS_BLACK_QUEEN |
+           CASTLING_RIGHTS_BLACK_KING);
+    else if (sq == h1 && col == mWhite)
+      pos->castling_rights[pos->ply] &=
+          (CASTLING_RIGHTS_WHITE_QUEEN | CASTLING_RIGHTS_BLACK_QUEEN |
+           CASTLING_RIGHTS_BLACK_KING);
+    else if (sq == a8 && col == mBlack)
+      pos->castling_rights[pos->ply] &=
+          (CASTLING_RIGHTS_WHITE_KING | CASTLING_RIGHTS_WHITE_QUEEN |
+           CASTLING_RIGHTS_BLACK_KING);
+    else if (sq == h8 && col == mBlack)
+      pos->castling_rights[pos->ply] &=
+          (CASTLING_RIGHTS_WHITE_KING | CASTLING_RIGHTS_WHITE_QUEEN |
+           CASTLING_RIGHTS_BLACK_QUEEN);
+  }
+}
+
+void add_piece(Position* pos, U8 piece, U8 col, U8 sq) {
+  assert((pos->bb[col] >> sq) & 1 ^ 1);
+  assert((pos->bb[piece] >> sq) & 1 ^ 1);
+  pos->board[sq] = bb_to_board(col, piece);
+  pos->bb[col] ^= (1ULL << sq);
+  pos->bb[piece] ^= (1ULL << sq);
+  if (piece != mKing)
+    pos->pst_score[piece + col * 8] +=
+        piece_square_table[piece][col == mBlack ? flipped_square(sq) : sq];
+  else {
+    pos->pst_score[piece + col * 8] +=
+        (is_endgame(pos)
+             ? (pst_King_Black_endgame[col == mBlack ? flipped_square(sq) : sq])
+             : pst_King_Black_middlegame[col == mBlack ? flipped_square(sq)
+                                                       : sq]);
+    pos->king_square[col] = sq;
+  }
+}
 
 void do_move(Position* pos, Move m) {
   U8 from, to, flags;
   from = move_get_from(m);
   to = move_get_to(m);
   flags = move_get_flags(m);
-  U8* mailbox = pos->board;
-  U64* bitboard = pos->bb;
-  U8* halfmove_clock = pos->halfmove_clock;
-  U8* en_passant_sq = pos->en_passant_sq;
-  U8 side_2_move = pos->side_2_move;
-  U8* king_square = pos->king_square;
   pos->ply++;
-  U32 ply = pos->ply;
-  U8* captured_history_list = pos->captured_history_list;
-  U8* castling_rights = pos->castling_rights;
-  en_passant_sq[ply] = 64;
-  castling_rights[ply] = castling_rights[ply - 1];
-  halfmove_clock[ply] = halfmove_clock[ply - 1] + 1;
+  pos->en_passant_sq[pos->ply] = 64;
+  pos->castling_rights[pos->ply] = pos->castling_rights[pos->ply - 1];
+  pos->halfmove_clock[pos->ply] = pos->halfmove_clock[pos->ply - 1] + 1;
   switch (flags) {
     case MOVEFLAG_QUIET:
-      if (board_to_bb(mailbox[from]) == mPawn) {
+      if (board_to_bb(pos->board[from]) == mPawn) {
         pos->halfmove_clock[pos->ply] = 0;
       }
       break;
     case MOVEFLAG_PAWN_DPUSH:
-      halfmove_clock[ply] = 0;
-      en_passant_sq[ply] = to + (side_2_move == mWhite ? -8 : 8);
+      pos->halfmove_clock[pos->ply] = 0;
+      pos->en_passant_sq[pos->ply] = to + (pos->side_2_move == mWhite ? -8 : 8);
       break;
     case MOVEFLAG_CASTLE_KING:
-      mailbox[king_square[side_2_move] + 1] =
-          mailbox[king_square[side_2_move] + 3];
-      mailbox[king_square[side_2_move] + 3] = 0;
-      bitboard[side_2_move] ^= (1ULL << (king_square[side_2_move] + 1)) |
-                               (1ULL << (king_square[side_2_move] + 3));
-      bitboard[mRook] ^= (1ULL << (king_square[side_2_move] + 1)) |
-                         (1ULL << (king_square[side_2_move] + 3));
-
+      remove_piece(pos, mRook, pos->side_2_move,
+                   pos->king_square[pos->side_2_move] + 3);
+      add_piece(pos, mRook, pos->side_2_move,
+                pos->king_square[pos->side_2_move] + 1);
       break;
     case MOVEFLAG_CASTLE_QUEEN:
-
-      mailbox[king_square[side_2_move] - 1] =
-          mailbox[king_square[side_2_move] - 4];
-      mailbox[king_square[side_2_move] - 4] = 0;
-      bitboard[side_2_move] ^= (1ULL << (king_square[side_2_move] - 1)) |
-                               (1ULL << (king_square[side_2_move] - 4));
-      bitboard[mRook] ^= (1ULL << (king_square[side_2_move] - 1)) |
-                         (1ULL << (king_square[side_2_move] - 4));
+      remove_piece(pos, mRook, pos->side_2_move,
+                   pos->king_square[pos->side_2_move] - 4);
+      add_piece(pos, mRook, pos->side_2_move,
+                pos->king_square[pos->side_2_move] - 1);
       break;
     case MOVEFLAG_CAPTURE:
-      halfmove_clock[ply] = 0;
+      pos->halfmove_clock[pos->ply] = 0;
 
-      captured_history_list[pos->captured_history_ptr++] = mailbox[to];
-      bitboard[1 ^ side_2_move] ^= (1ULL << (to));
-      bitboard[board_to_bb(mailbox[to])] ^= (1ULL << (to));
-
+      pos->captured_history_list[pos->captured_history_ptr++] = pos->board[to];
+      remove_piece(pos, board_to_bb(pos->board[to]), 1 ^ pos->side_2_move, to);
       break;
     case MOVEFLAG_CAPTURE_EP:
-      halfmove_clock[ply] = 0;
-      captured_history_list[pos->captured_history_ptr++] =
-          mailbox[en_passant_sq[ply - 1] + (side_2_move == mWhite ? -8 : 8)];
-      mailbox[en_passant_sq[ply - 1] + (side_2_move == mWhite ? -8 : 8)] = 0;
-      bitboard[1 ^ side_2_move] ^=
-          (1ULL << (en_passant_sq[ply - 1] + (side_2_move == mWhite ? -8 : 8)));
-      bitboard[mPawn] ^=
-          (1ULL << (en_passant_sq[ply - 1] + (side_2_move == mWhite ? -8 : 8)));
+      pos->halfmove_clock[pos->ply] = 0;
+      pos->captured_history_list[pos->captured_history_ptr++] =
+          pos->board[pos->en_passant_sq[pos->ply - 1] +
+                     (pos->side_2_move == mWhite ? -8 : 8)];
+      remove_piece(pos, mPawn, 1 ^ pos->side_2_move,
+                   pos->en_passant_sq[pos->ply - 1] +
+                       (pos->side_2_move == mWhite ? -8 : 8));
       break;
     case MOVEFLAG_PROMOTE_KNIGHT:
-      halfmove_clock[ply] = 0;
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mKnight] ^= (1ULL << from);
-      mailbox[from] += -'P' + 'N';
+      pos->halfmove_clock[pos->ply] = 0;
+      remove_piece(pos, mPawn, pos->side_2_move, from);
+      add_piece(pos, mKnight, pos->side_2_move, from);
       break;
     case MOVEFLAG_PROMOTE_BISHOP:
-      halfmove_clock[ply] = 0;
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mBishop] ^= (1ULL << from);
-      mailbox[from] += -'P' + 'B';
+      pos->halfmove_clock[pos->ply] = 0;
+      remove_piece(pos, mPawn, pos->side_2_move, from);
+      add_piece(pos, mBishop, pos->side_2_move, from);
       break;
     case MOVEFLAG_PROMOTE_ROOK:
-      halfmove_clock[ply] = 0;
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mRook] ^= (1ULL << from);
-      mailbox[from] += -'P' + 'R';
+      pos->halfmove_clock[pos->ply] = 0;
+      remove_piece(pos, mPawn, pos->side_2_move, from);
+      add_piece(pos, mRook, pos->side_2_move, from);
       break;
     case MOVEFLAG_PROMOTE_QUEEN:
-      halfmove_clock[ply] = 0;
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mQueen] ^= (1ULL << from);
-      mailbox[from] += -'P' + 'Q';
+      pos->halfmove_clock[pos->ply] = 0;
+      remove_piece(pos, mPawn, pos->side_2_move, from);
+      add_piece(pos, mQueen, pos->side_2_move, from);
       break;
     case MOVEFLAG_PROMOTE_KNIGHT_CAPTURE:
-      halfmove_clock[ply] = 0;
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mKnight] ^= (1ULL << from);
-      mailbox[from] += -'P' + 'N';
-      captured_history_list[pos->captured_history_ptr++] = mailbox[to];
-      bitboard[1 ^ side_2_move] ^= (1ULL << (to));
-      bitboard[board_to_bb(mailbox[to])] ^= (1ULL << (to));
+      pos->halfmove_clock[pos->ply] = 0;
+      remove_piece(pos, mPawn, pos->side_2_move, from);
+      add_piece(pos, mKnight, pos->side_2_move, from);
+      pos->captured_history_list[pos->captured_history_ptr++] = pos->board[to];
+      remove_piece(pos, board_to_bb(pos->board[to]), 1 ^ pos->side_2_move, to);
       break;
     case MOVEFLAG_PROMOTE_BISHOP_CAPTURE:
-      halfmove_clock[ply] = 0;
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mBishop] ^= (1ULL << from);
-      mailbox[from] += -'P' + 'B';
-      captured_history_list[pos->captured_history_ptr++] = mailbox[to];
-      bitboard[1 ^ side_2_move] ^= (1ULL << (to));
-      bitboard[board_to_bb(mailbox[to])] ^= (1ULL << (to));
+      pos->halfmove_clock[pos->ply] = 0;
+      remove_piece(pos, mPawn, pos->side_2_move, from);
+      add_piece(pos, mBishop, pos->side_2_move, from);
+      pos->captured_history_list[pos->captured_history_ptr++] = pos->board[to];
+      remove_piece(pos, board_to_bb(pos->board[to]), 1 ^ pos->side_2_move, to);
       break;
     case MOVEFLAG_PROMOTE_ROOK_CAPTURE:
-      halfmove_clock[ply] = 0;
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mRook] ^= (1ULL << from);
-      mailbox[from] += -'P' + 'R';
-      captured_history_list[pos->captured_history_ptr++] = mailbox[to];
-      bitboard[1 ^ side_2_move] ^= (1ULL << (to));
-      bitboard[board_to_bb(mailbox[to])] ^= (1ULL << (to));
+      pos->halfmove_clock[pos->ply] = 0;
+      remove_piece(pos, mPawn, pos->side_2_move, from);
+      add_piece(pos, mRook, pos->side_2_move, from);
+      pos->captured_history_list[pos->captured_history_ptr++] = pos->board[to];
+      remove_piece(pos, board_to_bb(pos->board[to]), 1 ^ pos->side_2_move, to);
       break;
     case MOVEFLAG_PROMOTE_QUEEN_CAPTURE:
-      halfmove_clock[ply] = 0;
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mQueen] ^= (1ULL << from);
-      mailbox[from] += -'P' + 'Q';
-      captured_history_list[pos->captured_history_ptr++] = mailbox[to];
-      bitboard[1 ^ side_2_move] ^= (1ULL << (to));
-      bitboard[board_to_bb(mailbox[to])] ^= (1ULL << (to));
+      pos->halfmove_clock[pos->ply] = 0;
+      remove_piece(pos, mPawn, pos->side_2_move, from);
+      add_piece(pos, mQueen, pos->side_2_move, from);
+      pos->captured_history_list[pos->captured_history_ptr++] = pos->board[to];
+      remove_piece(pos, board_to_bb(pos->board[to]), 1 ^ pos->side_2_move, to);
       break;
   };
-  if (board_to_bb(mailbox[to]) == mRook && castling_rights[ply]) {
-    if (to == h1)
-      castling_rights[ply] &= CASTLING_RIGHTS_WHITE_QUEEN |
-                              CASTLING_RIGHTS_BLACK_KING |
-                              CASTLING_RIGHTS_BLACK_QUEEN;
-    if (to == a1)
-      castling_rights[ply] &= CASTLING_RIGHTS_BLACK_QUEEN |
-                              CASTLING_RIGHTS_BLACK_KING |
-                              CASTLING_RIGHTS_WHITE_KING;
-    if (to == h8)
-      castling_rights[ply] &= CASTLING_RIGHTS_WHITE_KING |
-                              CASTLING_RIGHTS_BLACK_QUEEN |
-                              CASTLING_RIGHTS_WHITE_QUEEN;
-    if (to == a8)
-      castling_rights[ply] &= CASTLING_RIGHTS_WHITE_QUEEN |
-                              CASTLING_RIGHTS_WHITE_KING |
-                              CASTLING_RIGHTS_BLACK_KING;
-  }
-  if (board_to_bb(mailbox[from]) == mRook && castling_rights[ply]) {
-    if (from == h1)
-      castling_rights[ply] &= CASTLING_RIGHTS_WHITE_QUEEN |
-                              CASTLING_RIGHTS_BLACK_KING |
-                              CASTLING_RIGHTS_BLACK_QUEEN;
-    if (from == a1)
-      castling_rights[ply] &= CASTLING_RIGHTS_BLACK_QUEEN |
-                              CASTLING_RIGHTS_BLACK_KING |
-                              CASTLING_RIGHTS_WHITE_KING;
-    if (from == h8)
-      castling_rights[ply] &= CASTLING_RIGHTS_WHITE_KING |
-                              CASTLING_RIGHTS_BLACK_QUEEN |
-                              CASTLING_RIGHTS_WHITE_QUEEN;
-    if (from == a8)
-      castling_rights[ply] &= CASTLING_RIGHTS_WHITE_QUEEN |
-                              CASTLING_RIGHTS_WHITE_KING |
-                              CASTLING_RIGHTS_BLACK_KING;
-  }
-  bitboard[side_2_move] ^= (1ULL << to) | (1ULL << from);
-  bitboard[board_to_bb(mailbox[from])] ^= (1ULL << to) | (1ULL << from);
-  mailbox[to] = mailbox[from];
-  mailbox[from] = 0;
-  if (king_square[side_2_move] == from) {
-    king_square[side_2_move] = to;
-    if (side_2_move == mWhite)
-      pos->castling_rights[ply] &=
-          (CASTLING_RIGHTS_BLACK_KING | CASTLING_RIGHTS_BLACK_QUEEN);
-    else
-      pos->castling_rights[ply] &=
-          (CASTLING_RIGHTS_WHITE_KING | CASTLING_RIGHTS_WHITE_QUEEN);
-  }
+  U8 piece = pos->board[from];
+  remove_piece(pos, board_to_bb(piece), pos->side_2_move, from);
+  add_piece(pos, board_to_bb(piece), pos->side_2_move, to);
 
   pos->side_2_move ^= 1;
+  if (pos->side_2_move == mWhite) pos->fullmove++;
 }
 
 void undo_move(Position* pos, Move m) {
+  if (pos->side_2_move == mWhite) pos->fullmove--;
   pos->side_2_move ^= 1;
-
-  U8* mailbox = pos->board;
-  U64* bitboard = pos->bb;
-  U8* en_passant_sq = pos->en_passant_sq;
-  U8 side_2_move = pos->side_2_move;
-  U8* king_square = pos->king_square;
-  U32 ply = pos->ply;
-  U8* captured_history_list = pos->captured_history_list;
 
   U8 from, to, flags;
   from = move_get_from(m);
   to = move_get_to(m);
   flags = move_get_flags(m);
-  if (king_square[side_2_move] == to) {
-    king_square[side_2_move] = from;
-  }
-  mailbox[from] = mailbox[to];
-  mailbox[to] = 0;
-  bitboard[side_2_move] ^= (1ULL << to) | (1ULL << from);
-  bitboard[board_to_bb(mailbox[from])] ^= (1ULL << to) | (1ULL << from);
+  U8 piece = pos->board[to];
+  remove_piece(pos, board_to_bb(piece), pos->side_2_move, to);
+  add_piece(pos, board_to_bb(piece), pos->side_2_move, from);
+
   switch (flags) {
     case MOVEFLAG_CASTLE_KING:
-      mailbox[king_square[side_2_move] + 3] =
-          mailbox[king_square[side_2_move] + 1];
-      mailbox[king_square[side_2_move] + 1] = 0;
-
-      bitboard[side_2_move] ^= (1ULL << (king_square[side_2_move] + 1)) |
-                               (1ULL << (king_square[side_2_move] + 3));
-      bitboard[mRook] ^= (1ULL << (king_square[side_2_move] + 1)) |
-                         (1ULL << (king_square[side_2_move] + 3));
+      remove_piece(pos, mRook, pos->side_2_move,
+                   pos->king_square[pos->side_2_move] + 1);
+      add_piece(pos, mRook, pos->side_2_move,
+                pos->king_square[pos->side_2_move] + 3);
       break;
     case MOVEFLAG_CASTLE_QUEEN:
-      mailbox[king_square[side_2_move] - 4] =
-          mailbox[king_square[side_2_move] - 1];
-      mailbox[king_square[side_2_move] - 1] = 0;
-      bitboard[side_2_move] ^= (1ULL << (king_square[side_2_move] - 1)) |
-                               (1ULL << (king_square[side_2_move] - 4));
-      bitboard[mRook] ^= (1ULL << (king_square[side_2_move] - 1)) |
-                         (1ULL << (king_square[side_2_move] - 4));
+      remove_piece(pos, mRook, pos->side_2_move,
+                   pos->king_square[pos->side_2_move] - 1);
+      add_piece(pos, mRook, pos->side_2_move,
+                pos->king_square[pos->side_2_move] - 4);
       break;
     case MOVEFLAG_CAPTURE:
       pos->captured_history_ptr--;
-      mailbox[to] = captured_history_list[pos->captured_history_ptr];
-      bitboard[board_to_bb(captured_history_list[pos->captured_history_ptr])] ^=
-          (1ULL << (to));
-      bitboard[1 ^ side_2_move] ^= (1ULL << (to));
+      add_piece(
+          pos,
+          board_to_bb(pos->captured_history_list[pos->captured_history_ptr]),
+          1 ^ pos->side_2_move, to);
       break;
     case MOVEFLAG_CAPTURE_EP:
       pos->captured_history_ptr--;
-      mailbox[en_passant_sq[ply - 1] + (side_2_move == mWhite ? -8 : 8)] =
-          captured_history_list[pos->captured_history_ptr];
-      bitboard[1 ^ side_2_move] ^=
-          (1ULL << (en_passant_sq[ply - 1] + (side_2_move == mWhite ? -8 : 8)));
-      bitboard[mPawn] ^=
-          (1ULL << (en_passant_sq[ply - 1] + (side_2_move == mWhite ? -8 : 8)));
+      add_piece(pos, mPawn, 1 ^ pos->side_2_move,
+                pos->en_passant_sq[pos->ply - 1] +
+                    (pos->side_2_move == mWhite ? -8 : 8));
       break;
     case MOVEFLAG_PROMOTE_KNIGHT:
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mKnight] ^= (1ULL << from);
-      mailbox[from] -= -'P' + 'N';
+      remove_piece(pos, mKnight, pos->side_2_move, from);
+      add_piece(pos, mPawn, pos->side_2_move, from);
       break;
     case MOVEFLAG_PROMOTE_BISHOP:
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mBishop] ^= (1ULL << from);
-      mailbox[from] -= -'P' + 'B';
+      remove_piece(pos, mBishop, pos->side_2_move, from);
+      add_piece(pos, mPawn, pos->side_2_move, from);
       break;
     case MOVEFLAG_PROMOTE_ROOK:
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mRook] ^= (1ULL << from);
-      mailbox[from] -= -'P' + 'R';
+      remove_piece(pos, mRook, pos->side_2_move, from);
+      add_piece(pos, mPawn, pos->side_2_move, from);
       break;
     case MOVEFLAG_PROMOTE_QUEEN:
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mQueen] ^= (1ULL << from);
-      mailbox[from] -= -'P' + 'Q';
+      remove_piece(pos, mQueen, pos->side_2_move, from);
+      add_piece(pos, mPawn, pos->side_2_move, from);
       break;
     case MOVEFLAG_PROMOTE_KNIGHT_CAPTURE:
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mKnight] ^= (1ULL << from);
-      mailbox[from] -= -'P' + 'N';
+      remove_piece(pos, mKnight, pos->side_2_move, from);
+      add_piece(pos, mPawn, pos->side_2_move, from);
       pos->captured_history_ptr--;
-      mailbox[to] = captured_history_list[pos->captured_history_ptr];
-      bitboard[1 ^ side_2_move] ^= (1ULL << (to));
-
-      bitboard[board_to_bb(captured_history_list[pos->captured_history_ptr])] ^=
-          (1ULL << (to));
+      add_piece(
+          pos,
+          board_to_bb(pos->captured_history_list[pos->captured_history_ptr]),
+          1 ^ pos->side_2_move, to);
       break;
     case MOVEFLAG_PROMOTE_BISHOP_CAPTURE:
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mBishop] ^= (1ULL << from);
-      mailbox[from] -= -'P' + 'B';
+      remove_piece(pos, mBishop, pos->side_2_move, from);
+      add_piece(pos, mPawn, pos->side_2_move, from);
       pos->captured_history_ptr--;
-      mailbox[to] = captured_history_list[pos->captured_history_ptr];
-      bitboard[1 ^ side_2_move] ^= (1ULL << (to));
-
-      bitboard[board_to_bb(captured_history_list[pos->captured_history_ptr])] ^=
-          (1ULL << (to));
+      add_piece(
+          pos,
+          board_to_bb(pos->captured_history_list[pos->captured_history_ptr]),
+          1 ^ pos->side_2_move, to);
       break;
     case MOVEFLAG_PROMOTE_ROOK_CAPTURE:
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mRook] ^= (1ULL << from);
-      mailbox[from] -= -'P' + 'R';
+      remove_piece(pos, mRook, pos->side_2_move, from);
+      add_piece(pos, mPawn, pos->side_2_move, from);
       pos->captured_history_ptr--;
-      mailbox[to] = captured_history_list[pos->captured_history_ptr];
-      bitboard[1 ^ side_2_move] ^= (1ULL << (to));
-
-      bitboard[board_to_bb(captured_history_list[pos->captured_history_ptr])] ^=
-          (1ULL << (to));
+      add_piece(
+          pos,
+          board_to_bb(pos->captured_history_list[pos->captured_history_ptr]),
+          1 ^ pos->side_2_move, to);
       break;
     case MOVEFLAG_PROMOTE_QUEEN_CAPTURE:
-      bitboard[mPawn] ^= (1ULL << from);
-      bitboard[mQueen] ^= (1ULL << from);
-      mailbox[from] -= -'P' + 'Q';
+      remove_piece(pos, mQueen, pos->side_2_move, from);
+      add_piece(pos, mPawn, pos->side_2_move, from);
       pos->captured_history_ptr--;
-      mailbox[to] = captured_history_list[pos->captured_history_ptr];
-      bitboard[1 ^ side_2_move] ^= (1ULL << (to));
-
-      bitboard[board_to_bb(captured_history_list[pos->captured_history_ptr])] ^=
-          (1ULL << (to));
+      add_piece(
+          pos,
+          board_to_bb(pos->captured_history_list[pos->captured_history_ptr]),
+          1 ^ pos->side_2_move, to);
       break;
   };
   pos->ply--;
